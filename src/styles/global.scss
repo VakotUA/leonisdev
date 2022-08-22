@@ -1,0 +1,24 @@
+@import './variables.scss';
+@import '../assets/fonts/stylesheet.scss';
+
+html,
+body {
+  color: rgb(255, 255, 255);
+  font-family: 'Gilroy';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: black;
+
+  min-height: 100vh;
+  position: relative;
+
+  max-width: 100%;
+  overflow-x: hidden;
+
+  background: url('./../assets/images/sparks_bg.jpg');
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-position: 0 0;
+  background-attachment: fixed;
+}

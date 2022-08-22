@@ -1,0 +1,139 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.Header {
+  display: flex;
+  align-items: flex-end;
+  height: 170px;
+
+  @media (max-width: $md3) {
+    height: 90px;
+  }
+}
+
+.Content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  > * {
+    z-index: 100;
+  }
+
+  padding-bottom: 20px !important;
+}
+
+.Logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.75rem;
+  margin-right: 30px;
+
+  > img:first-of-type {
+    width: 80px;
+    height: 80px;
+  }
+  > img:last-of-type {
+    height: 36px;
+  }
+
+  @media (max-width: $md4) {
+    gap: 0.5rem;
+    margin-right: 20px;
+
+    > img:first-of-type {
+      width: 50px;
+      height: 50px;
+    }
+    > img:last-of-type {
+      height: 24px;
+    }
+  }
+}
+
+.Navigation {
+  ul {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+
+    margin-right: 2rem;
+
+    li {
+      font-size: 16px;
+      color: white;
+      font-weight: 500;
+
+      letter-spacing: 0.35rem;
+
+      @include hover_effect_underline;
+    }
+  }
+
+  @media (max-width: 1440px) {
+    pointer-events: none;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 700px;
+    height: 1000px;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 170px 100px 200px 0;
+
+    transform: translate(200px, -200px) scale(1.2);
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.3s, border-radius 0.3s;
+
+    background-color: rgba(0, 0, 0, 0.9);
+
+    border-radius: 20%;
+
+    &.Active {
+      pointer-events: all;
+
+      transform: translate(300px, -300px) scale(1);
+      opacity: 1;
+      border-radius: 50%;
+    }
+
+    ul {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+}
+
+.Links {
+  display: inline-flex;
+  gap: 2rem;
+
+  a {
+    @media (max-width: $md4) {
+      display: none;
+    }
+
+    > * {
+      height: 32px;
+      transition: transform 0.3s;
+
+      &:hover {
+        transform: scale(1.1) translateY(-10%);
+      }
+    }
+  }
+}
+
+.Menu {
+  display: none;
+
+  @media (max-width: 1440px) {
+    display: block;
+  }
+}

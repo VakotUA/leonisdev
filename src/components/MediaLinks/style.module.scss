@@ -1,0 +1,40 @@
+@import '../../styles/variables.scss';
+
+.Content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+
+.Background {
+  height: 300px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    padding-top: 64px;
+
+    flex-wrap: wrap;
+
+    a {
+      > * {
+        height: 64px;
+        transition: transform 0.3s;
+
+        &:hover {
+          transform: scale(1.1) translateY(-10%);
+        }
+      }
+    }
+  }
+}

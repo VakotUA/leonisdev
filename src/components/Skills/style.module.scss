@@ -1,0 +1,94 @@
+@import '../../styles/variables.scss';
+
+.Skills {
+  width: 100%;
+  margin-top: 160px;
+  z-index: 2;
+}
+
+.Collumns {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+
+  @media (max-width: $md3) {
+    flex-direction: column;
+  }
+
+  > * {
+    margin-top: 32px;
+  }
+
+  .Block {
+    flex: 1;
+
+    z-index: 2;
+
+    .Title {
+      height: 50px;
+    }
+  }
+
+  .Text {
+    margin-top: 48px;
+    p {
+      margin-bottom: 36px;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+
+    padding: 48px 36px 72px;
+
+    li {
+      width: 50%;
+      padding-left: 30px;
+      min-width: 350px;
+      margin-bottom: 22px;
+      position: relative;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      &::before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        background-color: white;
+
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: rotate(45deg) translateY(-75%);
+      }
+    }
+  }
+}
+
+.Separator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  min-height: 550px;
+
+  @media (max-width: $md3) {
+    display: none;
+  }
+}
+
+.Button {
+  // mobile first
+  @media (min-width: $md3) {
+    max-width: 90%;
+  }
+}
+
+.CustomLetterSpacing {
+  letter-spacing: 0.13rem !important;
+}

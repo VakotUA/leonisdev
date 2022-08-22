@@ -1,0 +1,94 @@
+@import '../../styles/variables.scss';
+
+.Contacts {
+  width: 100%;
+  background-color: black;
+
+  padding-top: 120px;
+}
+
+.Content {
+  .Collumns {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+
+    @media (max-width: $md3) {
+      flex-direction: column;
+    }
+
+    > * {
+      margin-top: 32px;
+    }
+
+    .Contact,
+    .Form {
+      // flex: 1;
+
+      z-index: 2;
+
+      form {
+        position: relative;
+        background-color: #0d0d0d;
+        padding: 40px 20px;
+      }
+    }
+
+    .Contact {
+      flex: 0.8;
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+      gap: 6rem;
+
+      // min-height: 700px;
+
+      margin: 180px 0;
+
+      // custom font-size
+      p {
+        font-size: calc(18px + 12 * (100vw / 1920));
+        white-space: nowrap;
+      }
+
+      span {
+        display: inline-flex;
+        align-items: center;
+        gap: 1rem;
+
+        img {
+          height: 32px;
+        }
+      }
+
+      position: relative;
+
+      .Image {
+        width: 150%;
+        position: absolute;
+        bottom: -10%;
+        left: -40%;
+        z-index: -1;
+
+        @media (max-width: $md3) {
+          display: none;
+        }
+      }
+    }
+
+    .Form {
+      flex: 1.2;
+      margin-top: 80px;
+      margin-left: 50px;
+      position: relative;
+      .Image {
+        height: 320px;
+        position: absolute;
+        z-index: 1;
+        top: -296px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}

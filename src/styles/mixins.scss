@@ -1,0 +1,48 @@
+@mixin hover_effect_underline {
+  position: relative;
+
+  &::after {
+    content: '';
+    background-color: white;
+    width: 0;
+    height: 1px;
+    opacity: 0;
+    transition: opacity 0.3s, width 0.3s;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -6px;
+  }
+
+  &.Active::after {
+    width: 50%;
+    height: 2px;
+    opacity: 1;
+  }
+
+  &:hover::after {
+    width: 100%;
+    opacity: 1;
+  }
+
+  cursor: pointer;
+}
+
+@mixin left_side_decorative_line {
+  position: relative;
+
+  &::after {
+    content: '';
+    width: 100vw;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 12px;
+
+    opacity: 0.25;
+  }
+}
