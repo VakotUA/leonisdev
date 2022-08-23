@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/leonisdev/static/css/main.7b33eabe.css",
-    "main.js": "/leonisdev/static/js/main.15227b59.js",
+    "main.css": "/leonisdev/static/css/main.5496858f.css",
+    "main.js": "/leonisdev/static/js/main.cd0fefc4.js",
     "static/media/lion_main.png": "/leonisdev/static/media/lion_main.d0dcca6258d765033a1b.png",
     "static/media/lion_portfolio.png": "/leonisdev/static/media/lion_portfolio.a81bb08690e38e78a404.png",
     "static/media/lion_eyes.jpg": "/leonisdev/static/media/lion_eyes.308fa322cf8aa2e46664.jpg",
@@ -71,11 +71,11 @@
     "index.html": "/leonisdev/index.html",
     "static/media/filled.svg": "/leonisdev/static/media/filled.aec8c9e28f5f1e1b8151d378ca0f54d8.svg",
     "static/media/outlined.svg": "/leonisdev/static/media/outlined.589c0f49ac88762928ea6dbe90a7914d.svg",
-    "main.7b33eabe.css.map": "/leonisdev/static/css/main.7b33eabe.css.map",
-    "main.15227b59.js.map": "/leonisdev/static/js/main.15227b59.js.map"
+    "main.5496858f.css.map": "/leonisdev/static/css/main.5496858f.css.map",
+    "main.cd0fefc4.js.map": "/leonisdev/static/js/main.cd0fefc4.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b33eabe.css",
-    "static/js/main.15227b59.js"
+    "static/css/main.5496858f.css",
+    "static/js/main.cd0fefc4.js"
   ]
 }
