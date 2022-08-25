@@ -13,8 +13,14 @@
       display: inline-flex;
       gap: 2rem;
 
+      @media (max-width: $md3) {
+        gap: 1rem;
+      }
+
       li {
-        @include hover_effect_underline;
+        p {
+          @include hover_effect_underline;
+        }
       }
     }
   }

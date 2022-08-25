@@ -31,8 +31,8 @@ const Portfolio: React.FC = () => {
         <Text.H3>OUR PORTFOLIO</Text.H3>
         <div className={style.Tabs}>
           <ul>
-            <li className={style.Active}>
-              <Text.P>ALL</Text.P>
+            <li>
+              <Text.P className={style.Active}>ALL</Text.P>
             </li>
             <li>
               <Text.P>LANDING</Text.P>

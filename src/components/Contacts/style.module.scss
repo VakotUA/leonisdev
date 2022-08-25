@@ -20,36 +20,47 @@
   h5 {
     margin: 0 36px;
   }
+}
 
-  .Collumns {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
+.Collumns {
+  display: flex;
+
+  @media (max-width: $md3) {
+    flex-direction: column;
+  }
+
+  margin-top: 32px;
+
+  .Contact,
+  .Form {
+    flex: 0 1 50%;
+
+    z-index: 2;
 
     @media (max-width: $md3) {
+      flex: 0 1 1;
+    }
+  }
+
+  .Contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin-top: 100px;
+
+    > div:first-of-type {
+      display: flex;
       flex-direction: column;
-    }
-
-    > * {
-      margin-top: 32px;
-    }
-
-    .Contact,
-    .Form {
-      @media (max-width: $md4) {
-        flex: 1 !important;
-      }
-
+      gap: 4rem;
       z-index: 2;
     }
 
-    .Contact {
-      flex: 0.8;
-      display: flex;
-      flex-direction: column;
-      gap: 6rem;
-
-      margin: 180px 36px;
+    span {
+      display: inline-flex;
+      align-items: center;
+      gap: 1rem;
 
       // custom font-size
       p {
@@ -57,54 +68,50 @@
         white-space: nowrap;
       }
 
-      span {
-        display: inline-flex;
-        align-items: center;
-        gap: 1rem;
-
-        img {
-          height: 32px;
-        }
-      }
-
-      z-index: 3;
-
-      position: relative;
-
-      .Image {
-        width: 150%;
-        position: absolute;
-        bottom: -10%;
-        left: -40%;
-        z-index: -1;
-
-        @media (max-width: $md3) {
-          display: none;
-        }
+      img {
+        height: 32px;
       }
     }
 
-    .Form {
-      flex: 1.2;
-      margin-top: 80px;
-      margin-left: 50px;
-      position: relative;
-      background-color: #0d0d0d;
-      padding: 40px 20px;
+    position: relative;
 
-      @media (max-width: $md4) {
-        margin-left: 0;
-        padding: 70px 24px;
-      }
+    .Image {
+      bottom: 0;
+      position: absolute;
 
-      .Image {
-        height: 320px;
-        position: absolute;
-        z-index: 1;
-        top: -296px;
-        left: 50%;
-        transform: translateX(-50%);
+      @media (max-width: $md3) {
+        display: none;
       }
+    }
+  }
+
+  .Form {
+    margin-top: 80px;
+    position: relative;
+    background-color: #0d0d0d;
+    padding: 40px 80px;
+
+    @media (max-width: $md2) {
+      padding: 40px 80px;
+    }
+
+    @media (max-width: $md3) {
+      margin-top: 300px;
+      padding: 70px 100px;
+    }
+
+    @media (max-width: $md4) {
+      margin-top: 300px;
+      padding: 70px 40px;
+    }
+
+    .Image {
+      height: 320px;
+      position: absolute;
+      z-index: 1;
+      top: -296px;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }

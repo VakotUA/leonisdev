@@ -4,6 +4,7 @@
   width: 100%;
   margin-top: 160px;
   z-index: 2;
+  min-height: 960px;
 }
 
 .Collumns {
@@ -21,18 +22,23 @@
 
   .Block {
     flex: 1;
+    margin-bottom: 80px;
 
     z-index: 2;
 
     .Title {
-      height: 50px;
+      min-height: 50px;
     }
-  }
 
-  .Text {
-    margin-top: 48px;
-    p {
-      margin-bottom: 36px;
+    .Text {
+      margin-top: 24px;
+      p {
+        margin-bottom: 36px;
+
+        &:last-of-type {
+          margin-bottom: 128px;
+        }
+      }
     }
   }
 
@@ -40,15 +46,14 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
-    justify-content: flex-end;
 
-    padding: 48px 36px 72px;
+    padding: 36px;
+
+    gap: 1.75rem 0;
 
     li {
-      width: 50%;
+      flex: 1 1 350px;
       padding-left: 30px;
-      min-width: 350px;
-      margin-bottom: 22px;
       position: relative;
 
       &:last-of-type {
@@ -79,13 +84,6 @@
 
   @media (max-width: $md3) {
     display: none;
-  }
-}
-
-.Button {
-  // mobile first
-  @media (min-width: $md3) {
-    max-width: 90%;
   }
 }
 

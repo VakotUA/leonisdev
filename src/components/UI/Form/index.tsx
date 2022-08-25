@@ -25,7 +25,7 @@ export const ContactForm: React.FC = () => {
   return (
     <form className={style.Form} onSubmit={handleSubmit}>
       <div>
-        <Text.H4>WRITE A MESSAGE</Text.H4>
+        <Text.H3>WRITE A MESSAGE</Text.H3>
 
         <div className={style.formGroup}>
           <input
@@ -38,7 +38,7 @@ export const ContactForm: React.FC = () => {
             value={details.name}
           />
           <label htmlFor="name">
-            <Text.P>NAME:</Text.P>
+            <Text.P>NAME</Text.P>
           </label>
         </div>
 
@@ -55,7 +55,7 @@ export const ContactForm: React.FC = () => {
           />
 
           <label htmlFor="email">
-            <Text.P>EMAIL:</Text.P>
+            <Text.P>EMAIL</Text.P>
           </label>
         </div>
 
@@ -71,7 +71,7 @@ export const ContactForm: React.FC = () => {
             required
           />
           <label htmlFor="phone">
-            <Text.P>PHONE:</Text.P>
+            <Text.P>PHONE</Text.P>
           </label>
         </div>
 
@@ -86,7 +86,7 @@ export const ContactForm: React.FC = () => {
             required
           />
           <label htmlFor="phone">
-            <Text.P>MESSAGE:</Text.P>
+            <Text.P>MESSAGE</Text.P>
           </label>
         </div>
 

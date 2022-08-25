@@ -16,9 +16,11 @@ const Contacts: React.FC = () => {
       <Container className={style.Content}>
         <Text.H3>GET IN TOUCH</Text.H3>
         <Text.H5>LET'S MAKE GREAT THINGS HAPPEN</Text.H5>
+      </Container>
 
-        <div className={style.Collumns}>
-          <div className={style.Contact}>
+      <div className={style.Collumns}>
+        <div className={style.Contact}>
+          <div>
             <span>
               <img src={Paw} alt="paw" />
               <Text.P>
@@ -37,16 +39,17 @@ const Contacts: React.FC = () => {
                 <a href="mailto:contact@leonis.dev">CONTACT@LEONIS.DEV</a>
               </Text.P>
             </span>
-
-            <img className={style.Image} src={Lion} alt="lion" />
           </div>
-
-          <div className={style.Form}>
-            <img className={style.Image} src={FormLion} alt="" />
-            <Form />
+          <div className={style.Image}>
+            <img src={Lion} alt="lion" />
           </div>
         </div>
-      </Container>
+
+        <div className={style.Form}>
+          <img className={style.Image} src={FormLion} alt="" />
+          <Form />
+        </div>
+      </div>
     </footer>
   )
 }

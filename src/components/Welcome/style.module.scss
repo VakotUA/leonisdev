@@ -7,6 +7,7 @@
 
 .Content {
   height: calc(100vh - 170px);
+  min-height: 600px;
 }
 
 .Greetings {
@@ -26,30 +27,29 @@
 
 .Image {
   overflow: hidden;
-  max-height: 120vh;
+  height: 130%;
   z-index: 0;
 
   position: absolute;
-  right: 2%;
+  left: 55%;
   top: 60%;
   transform: translateY(-50%);
 
-  @media (max-width: $md2) {
-    right: -100px;
-  }
   @media (max-width: $md3) {
     top: 50%;
-    right: -150px;
-    max-height: 90vh;
+    height: 120%;
   }
   @media (max-width: $md4) {
-    right: -200px;
-    max-height: 80vh;
+    left: 40%;
+    height: 100%;
+  }
+  @media (max-width: $md5) {
+    left: 30%;
   }
 }
 
 .Button {
-  margin-left: calc(6px + 5 * (100vw / 1920));
+  margin-left: calc(4px + (10 - 4) * ((100vw - 320px) / (1600 - 320)));
 }
 
 .Line {

@@ -10,7 +10,6 @@
 .Background {
   height: 300px;
   width: 100%;
-  background-position: center;
   background-size: cover;
 
   display: flex;
@@ -21,33 +20,43 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5rem;
+    gap: 5rem 0;
     padding-top: 64px;
 
     flex-wrap: wrap;
 
     @media (max-width: $md3) {
-      gap: 3rem;
+      gap: 3rem 0;
     }
     @media (max-width: $md4) {
-      gap: 2rem;
+      gap: 2rem 0;
     }
 
-    a {
-      > * {
-        height: 64px;
-        transition: transform 0.3s;
+    li {
+      flex: 0 1 10%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
 
-        &:hover {
-          transform: scale(1.1) translateY(-10%);
-        }
+      @media (max-width: $md3) {
+        flex: 0 1 30%;
+      }
 
-        @media (max-width: $md3) {
-          height: 52px;
-        }
+      a {
+        display: inline-block;
 
-        @media (max-width: $md4) {
-          height: 32px;
+        > * {
+          width: 82px;
+          transition: transform 0.3s;
+
+          &:hover {
+            transform: scale(1.1) translateY(-10%);
+          }
+
+          @media (max-width: $md3) {
+            width: 64px;
+          }
         }
       }
     }
