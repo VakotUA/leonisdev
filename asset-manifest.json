@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/leonisdev/static/css/main.5496858f.css",
-    "main.js": "/leonisdev/static/js/main.cd0fefc4.js",
+    "main.css": "/leonisdev/static/css/main.ff57c440.css",
+    "main.js": "/leonisdev/static/js/main.560a1cc6.js",
     "static/media/lion_main.png": "/leonisdev/static/media/lion_main.d0dcca6258d765033a1b.png",
     "static/media/lion_portfolio.png": "/leonisdev/static/media/lion_portfolio.a81bb08690e38e78a404.png",
+    "static/media/ellipse.png": "/leonisdev/static/media/ellipse.0ae28ea5a1d1769cac27.png",
     "static/media/lion_eyes.jpg": "/leonisdev/static/media/lion_eyes.308fa322cf8aa2e46664.jpg",
     "static/media/lion_contacts.png": "/leonisdev/static/media/lion_contacts.440eed30189736bfe8c5.png",
     "static/media/lion_foot.jpg": "/leonisdev/static/media/lion_foot.ccd74bf2d9325b276ff5.jpg",
@@ -70,12 +71,12 @@
     "static/media/Gilroy-Regular.woff": "/leonisdev/static/media/Gilroy-Regular.31d54a4b841c0e438f13.woff",
     "index.html": "/leonisdev/index.html",
     "static/media/filled.svg": "/leonisdev/static/media/filled.aec8c9e28f5f1e1b8151d378ca0f54d8.svg",
-    "static/media/outlined.svg": "/leonisdev/static/media/outlined.589c0f49ac88762928ea6dbe90a7914d.svg",
-    "main.5496858f.css.map": "/leonisdev/static/css/main.5496858f.css.map",
-    "main.cd0fefc4.js.map": "/leonisdev/static/js/main.cd0fefc4.js.map"
+    "static/media/outlined.svg": "/leonisdev/static/media/outlined.6a7162aad03906369fd9067735e90365.svg",
+    "main.ff57c440.css.map": "/leonisdev/static/css/main.ff57c440.css.map",
+    "main.560a1cc6.js.map": "/leonisdev/static/js/main.560a1cc6.js.map"
   },
   "entrypoints": [
-    "static/css/main.5496858f.css",
-    "static/js/main.cd0fefc4.js"
+    "static/css/main.ff57c440.css",
+    "static/js/main.560a1cc6.js"
   ]
 }
