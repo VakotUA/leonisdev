@@ -3,6 +3,48 @@
 
 .Welcome {
   position: relative;
+
+  .Particles1,
+  .Particles2,
+  .Particles3,
+  .Particles4,
+  .Particles5,
+  .Particles6 {
+    position: absolute;
+    z-index: 0;
+  }
+  .Particles1 {
+    top: 36px;
+    left: calc(42% + 100px);
+  }
+  .Particles2 {
+    top: 93px;
+    left: calc(42% + 180px);
+  }
+  .Particles3 {
+    left: 122px;
+
+    bottom: -150px;
+  }
+  .Particles4 {
+    top: 230px;
+    left: 70px;
+  }
+  .Particles5 {
+    top: 780px;
+    left: calc(42% + 255px);
+  }
+  .Particles6 {
+    right: 260px;
+    bottom: -320px;
+  }
+
+  .Circle {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(47%, -87%);
+  }
 }
 
 .Content {

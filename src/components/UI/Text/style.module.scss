@@ -1,8 +1,9 @@
+@use 'sass:math';
 @import '../../../styles/variables.scss';
 
 // https://css-tricks.com/snippets/css/fluid-typography/
 @function strip-unit($value) {
-  @return $value / ($value * 0 + 1);
+  @return math.div($value, ($value * 0 + 1));
 }
 
 @mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
@@ -36,7 +37,6 @@
 .h1 {
   line-height: 0.8;
   letter-spacing: 0.5rem;
-
   font-weight: 900;
 
   @include fluid-type(320px, 1600px, 64px, 256px);
@@ -53,14 +53,13 @@
 }
 
 .h3 {
-  font-size: calc(24px + 68 * (100vw / 1920));
   padding-left: calc(2px + (6 - 2) * ((100vw - 320px) / (1600 - 320)));
 
   letter-spacing: 0.07rem;
-  word-spacing: 0.2rem;
+  word-spacing: 0.5rem;
   font-weight: 900;
 
-  @include fluid-type(320px, 1600px, 24px, 82px);
+  @include fluid-type(320px, 1600px, 32px, 100px);
 }
 
 .h4 {
@@ -81,15 +80,13 @@
   word-spacing: 0.4rem;
   font-weight: 500;
 
-  @include fluid-type(320px, 1600px, 16px, 24px);
+  @include fluid-type(320px, 1600px, 12px, 16px);
 }
 
 .small {
-  font-size: 15px;
-  @include fluid-type(320px, 1600px, 12px, 18px);
-
   line-height: 2;
   word-spacing: 0.3rem;
-
   font-weight: 700;
+
+  @include fluid-type(320px, 1600px, 12px, 16px);
 }

@@ -3,12 +3,23 @@ import style from './style.module.scss'
 import Container from '../Layout/Container'
 import { Button } from '../UI/Button'
 import { Text } from '../UI/Text'
+import { Cross } from '../UI/Particles'
+import Circle from '../../assets/images/ellipse.png'
 
 import LionImage from '../../assets/images/lion_main.png'
 
 const Welcome: React.FC = () => {
   return (
     <main className={style.Welcome}>
+      <Cross.Filled size="80px" className={style.Particles1} />
+      <Cross.Filled size="44px" className={style.Particles2} />
+      <Cross.Filled size="52px" className={style.Particles3} />
+      <Cross.Outlined className={style.Particles4} />
+      <Cross.Outlined className={style.Particles5} />
+      <Cross.Filled size="80px" className={style.Particles6} />
+
+      <img src={Circle} alt="circle" className={style.Circle} />
+
       <Container className={style.Content}>
         <div className={style.Greetings}>
           <Text.H5 className={style.Line}>WE ARE CODE</Text.H5>

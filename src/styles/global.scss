@@ -17,8 +17,8 @@ body {
   overflow-x: hidden;
 
   background: url('./../assets/images/sparks_bg.jpg');
-  background-size: cover;
+  background-size: contain;
   background-repeat: repeat-y;
   background-position: 0 0;
-  background-attachment: fixed;
+  // background-attachment: fixed;
 }

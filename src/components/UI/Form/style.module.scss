@@ -1,3 +1,5 @@
+@import '../../../styles/variables.scss';
+
 .Form {
   * {
     transition: all 0.3s;
@@ -8,6 +10,13 @@
     flex-direction: column;
     justify-content: space-between;
   }
+}
+
+.Particles {
+  position: absolute;
+  left: -32px;
+  top: 50px;
+  opacity: 1;
 }
 
 .formGroup {
@@ -86,4 +95,13 @@
 .Button {
   margin-top: 70px;
   max-width: 100%;
+}
+
+.Title {
+  font-weight: 700;
+  font-size: 72px;
+  @media (max-width: $md4) {
+    font-size: 52px;
+  }
+  margin-bottom: 36px;
 }

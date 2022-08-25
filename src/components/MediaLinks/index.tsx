@@ -11,11 +11,13 @@ import LinkedIn from '../../assets/images/linkedin.png'
 import Facebook from '../../assets/images/facebook.png'
 import Twitter from '../../assets/images/twitter.png'
 import YouTube from '../../assets/images/youtube.png'
+import { Cross } from '../UI/Particles'
 
 const Media: React.FC = () => {
   return (
     <section className={style.Media}>
       <Container className={style.Content}>
+        <Cross.Filled size="60px" className={style.Particles} />
         <Text.H3>JOIN OUR PRIDE</Text.H3>
       </Container>
 

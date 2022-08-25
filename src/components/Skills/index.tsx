@@ -4,12 +4,16 @@ import { Text } from '../UI/Text'
 import { Separator } from '../UI/Separator'
 import { Button } from '../UI/Button'
 import { Cross } from '../UI/Particles'
+import Circle from '../../assets/images/ellipse.png'
 
 import Container from '../Layout/Container'
 
 const Skills: React.FC = () => {
   return (
     <section className={style.Skills}>
+      <img src={Circle} alt="circle" className={style.Circle1} />
+      <img src={Circle} alt="circle" className={style.Circle2} />
+
       <Container className={style.Content}>
         <Text.H2>WHAT WE DO</Text.H2>
         <Text.H3>OUR SKILLS ARE:</Text.H3>

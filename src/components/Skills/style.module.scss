@@ -1,10 +1,27 @@
 @import '../../styles/variables.scss';
 
 .Skills {
+  position: relative;
   width: 100%;
   margin-top: 160px;
   z-index: 2;
   min-height: 960px;
+
+  .Circle1,
+  .Circle2 {
+    position: absolute;
+  }
+
+  .Circle1 {
+    left: 0;
+    top: 0;
+    transform: translate(-85%, -40%);
+  }
+  .Circle2 {
+    right: 0;
+    top: 0;
+    transform: translate(82%, -10%);
+  }
 }
 
 .Collumns {
@@ -28,6 +45,7 @@
 
     .Title {
       min-height: 50px;
+      opacity: 0.5;
     }
 
     .Text {

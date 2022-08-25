@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import style from './style.module.scss'
 import { Button } from '../Button'
 import { Text } from '../Text'
+import { Cross } from '../Particles'
 
 interface IForm {
   name: string
@@ -25,7 +26,8 @@ export const ContactForm: React.FC = () => {
   return (
     <form className={style.Form} onSubmit={handleSubmit}>
       <div>
-        <Text.H3>WRITE A MESSAGE</Text.H3>
+        <Cross.Filled size="64px" className={style.Particles} />
+        <Text.H3 className={style.Title}>WRITE A MESSAGE</Text.H3>
 
         <div className={style.formGroup}>
           <input
@@ -44,6 +46,22 @@ export const ContactForm: React.FC = () => {
 
         <div className={style.formGroup}>
           <input
+            type="tel"
+            name="phone"
+            placeholder="Phone"
+            onChange={(e) => {
+              setDetails({ ...details, phone: e.target.value })
+            }}
+            value={details.phone}
+            required
+          />
+          <label htmlFor="phone">
+            <Text.P>PHONE NUMBER</Text.P>
+          </label>
+        </div>
+
+        <div className={style.formGroup}>
+          <input
             type="email"
             name="email"
             placeholder="email"
@@ -56,22 +74,6 @@ export const ContactForm: React.FC = () => {
 
           <label htmlFor="email">
             <Text.P>EMAIL</Text.P>
-          </label>
-        </div>
-
-        <div className={style.formGroup}>
-          <input
-            type="tel"
-            name="phone"
-            placeholder="Phone"
-            onChange={(e) => {
-              setDetails({ ...details, phone: e.target.value })
-            }}
-            value={details.phone}
-            required
-          />
-          <label htmlFor="phone">
-            <Text.P>PHONE</Text.P>
           </label>
         </div>
 
