@@ -13,12 +13,22 @@ import Twitter from '../../assets/images/twitter.png'
 import YouTube from '../../assets/images/youtube.png'
 import { Cross } from '../UI/Particles'
 
+import { motion } from 'framer-motion'
+import { TextAnimations } from '../../assets/animations/text'
+
 const Media: React.FC = () => {
   return (
-    <section className={style.Media}>
+    <motion.section
+      className={style.Media}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.4, once: true }}
+    >
       <Container className={style.Content}>
         <Cross.Filled size="60px" className={style.Particles} />
-        <Text.H3>JOIN OUR PRIDE</Text.H3>
+        <Text.H3 custom={1} variants={TextAnimations.bottomToTop}>
+          JOIN OUR PRIDE
+        </Text.H3>
       </Container>
 
       <div
@@ -27,40 +37,40 @@ const Media: React.FC = () => {
       >
         <Container>
           <ul>
-            <li>
+            <motion.li custom={1} variants={TextAnimations.bottomToTop}>
               <a href="/">
                 <img src={Telegram} alt="telegram" />
               </a>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li custom={2} variants={TextAnimations.bottomToTop}>
               <a href="/">
                 <img src={Instagram} alt="telegram" />
               </a>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li custom={3} variants={TextAnimations.bottomToTop}>
               <a href="/">
                 <img src={LinkedIn} alt="telegram" />
               </a>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li custom={3} variants={TextAnimations.bottomToTop}>
               <a href="/">
                 <img src={Facebook} alt="telegram" />
               </a>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li custom={2} variants={TextAnimations.bottomToTop}>
               <a href="/">
                 <img src={Twitter} alt="telegram" />
               </a>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li custom={1} variants={TextAnimations.bottomToTop}>
               <a href="/">
                 <img src={YouTube} alt="telegram" />
               </a>
-            </li>
+            </motion.li>
           </ul>
         </Container>
       </div>
-    </section>
+    </motion.section>
   )
 }
 

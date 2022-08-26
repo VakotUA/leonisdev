@@ -1,37 +1,76 @@
 import React from 'react'
 import style from './style.module.scss'
 
+import { motion } from 'framer-motion'
+
 interface Props {
   children?: React.ReactNode
   className?: string
 }
 
-const P: React.FC<Props> = ({ children, className }) => {
-  return <p className={`${style.p} ${className}`}>{children}</p>
-}
+export const P = motion(
+  React.forwardRef<HTMLParagraphElement, Props>(
+    ({ children, className }, ref) => (
+      <p ref={ref} className={`${style.p} ${className}`}>
+        {children}
+      </p>
+    )
+  )
+)
+export const H1 = motion(
+  React.forwardRef<HTMLHeadingElement, Props>(
+    ({ children, className }, ref) => (
+      <h1 ref={ref} className={`${style.h1} ${className}`}>
+        {children}
+      </h1>
+    )
+  )
+)
+export const H2 = motion(
+  React.forwardRef<HTMLHeadingElement, Props>(
+    ({ children, className }, ref) => (
+      <h2 ref={ref} className={`${style.h2} ${className}`}>
+        {children}
+      </h2>
+    )
+  )
+)
+export const H3 = motion(
+  React.forwardRef<HTMLHeadingElement, Props>(
+    ({ children, className }, ref) => (
+      <h3 ref={ref} className={`${style.h3} ${className}`}>
+        {children}
+      </h3>
+    )
+  )
+)
+export const H4 = motion(
+  React.forwardRef<HTMLHeadingElement, Props>(
+    ({ children, className }, ref) => (
+      <h4 ref={ref} className={`${style.h4} ${className}`}>
+        {children}
+      </h4>
+    )
+  )
+)
 
-const H1: React.FC<Props> = ({ children, className }) => {
-  return <h1 className={`${style.h1} ${className}`}>{children}</h1>
-}
-
-const H2: React.FC<Props> = ({ children, className }) => {
-  return <h2 className={`${style.h2} ${className}`}>{children}</h2>
-}
-
-const H3: React.FC<Props> = ({ children, className }) => {
-  return <h3 className={`${style.h3} ${className}`}>{children}</h3>
-}
-
-const H4: React.FC<Props> = ({ children, className }) => {
-  return <h4 className={`${style.h4} ${className}`}>{children}</h4>
-}
-
-const H5: React.FC<Props> = ({ children, className }) => {
-  return <h5 className={`${style.h5} ${className}`}>{children}</h5>
-}
-
-const Small: React.FC<Props> = ({ children, className }) => {
-  return <p className={`${style.small} ${className}`}>{children}</p>
-}
+export const H5 = motion(
+  React.forwardRef<HTMLHeadingElement, Props>(
+    ({ children, className }, ref) => (
+      <h5 ref={ref} className={`${style.h5} ${className}`}>
+        {children}
+      </h5>
+    )
+  )
+)
+export const Small = motion(
+  React.forwardRef<HTMLParagraphElement, Props>(
+    ({ children, className }, ref) => (
+      <p ref={ref} className={`${style.small} ${className}`}>
+        {children}
+      </p>
+    )
+  )
+)
 
 export const Text = { P, H1, H2, H3, H4, H5, Small }

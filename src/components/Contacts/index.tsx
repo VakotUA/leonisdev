@@ -10,32 +10,64 @@ import Container from '../Layout/Container'
 
 import { ContactForm as Form } from '../UI/Form'
 
+import { motion } from 'framer-motion'
+import { TextAnimations } from '../../assets/animations/text'
+
 const Contacts: React.FC = () => {
   return (
-    <footer className={style.Contacts}>
+    <motion.footer
+      className={style.Contacts}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.2, once: true }}
+    >
       <Container className={style.Content}>
-        <Text.H3>GET IN TOUCH</Text.H3>
-        <Text.H5>LET'S MAKE GREAT THINGS HAPPEN</Text.H5>
+        <Text.H3 custom={1} variants={TextAnimations.leftToRight}>
+          GET IN TOUCH
+        </Text.H3>
+        <Text.H5 custom={2} variants={TextAnimations.leftToRight}>
+          LET'S MAKE GREAT THINGS HAPPEN
+        </Text.H5>
       </Container>
 
       <div className={style.Collumns}>
-        <div className={style.Contact}>
+        <motion.div
+          className={style.Contact}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ amount: 0.2, once: true }}
+        >
           <div>
             <span>
-              <img src={Paw} alt="paw" />
-              <Text.P>
+              <motion.img
+                src={Paw}
+                alt="paw"
+                custom={0.8}
+                variants={TextAnimations.bottomToTop}
+              />
+              <Text.P custom={1} variants={TextAnimations.bottomToTop}>
                 <a href="tel:+380662047960">+38 (066) 204 79 60</a>
               </Text.P>
             </span>
             <span>
-              <img src={Paw} alt="paw" />
-              <Text.P>
+              <motion.img
+                src={Paw}
+                alt="paw"
+                custom={1.8}
+                variants={TextAnimations.bottomToTop}
+              />
+              <Text.P custom={2} variants={TextAnimations.bottomToTop}>
                 <a href="tel:+380662047960">+38 (066) 204 79 60</a>
               </Text.P>
             </span>
             <span>
-              <img src={Paw} alt="paw" />
-              <Text.P>
+              <motion.img
+                src={Paw}
+                alt="paw"
+                custom={2.8}
+                variants={TextAnimations.bottomToTop}
+              />
+              <Text.P custom={3} variants={TextAnimations.bottomToTop}>
                 <a href="mailto:contact@leonis.dev">CONTACT@LEONIS.DEV</a>
               </Text.P>
             </span>
@@ -43,14 +75,17 @@ const Contacts: React.FC = () => {
           <div className={style.Image}>
             <img src={Lion} alt="lion" />
           </div>
-        </div>
+        </motion.div>
 
-        <div className={style.Form}>
+        <motion.div
+          className={style.Form}
+          variants={TextAnimations.rightToLeft}
+        >
           <img className={style.Image} src={FormLion} alt="" />
           <Form />
-        </div>
+        </motion.div>
       </div>
-    </footer>
+    </motion.footer>
   )
 }
 

@@ -9,20 +9,16 @@ interface Props {
   className?: string
 }
 
-const Filled: React.FC<Props> = ({ size = '32px', className }) => {
-  return (
-    <div className={`${style.Filled} ${className}`} style={{ width: size }}>
-      <CrossFilled />
-    </div>
-  )
-}
+const Filled: React.FC<Props> = ({ size = '32px', className }, ref) => (
+  <div className={`${style.Filled} ${className}`} style={{ width: size }}>
+    <CrossFilled />
+  </div>
+)
 
-const Outlined: React.FC<Props> = ({ size = '32px', className }) => {
-  return (
-    <div className={`${style.Outlined} ${className}`} style={{ width: size }}>
-      <CrossOutlined />
-    </div>
-  )
-}
+const Outlined: React.FC<Props> = ({ size = '32px', className }) => (
+  <div className={`${style.Outlined} ${className}`} style={{ width: size }}>
+    <CrossOutlined />
+  </div>
+)
 
 export const Cross = { Filled, Outlined }
