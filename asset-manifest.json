@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/leonisdev/static/css/main.012c62b7.css",
-    "main.js": "/leonisdev/static/js/main.3317defd.js",
+    "main.js": "/leonisdev/static/js/main.91bbb1e9.js",
     "static/media/lion_1.png": "/leonisdev/static/media/lion_1.b3e3ade27be3bc9c7092.png",
     "static/media/lion_main.png": "/leonisdev/static/media/lion_main.d0dcca6258d765033a1b.png",
     "static/media/lion_portfolio.png": "/leonisdev/static/media/lion_portfolio.a81bb08690e38e78a404.png",
@@ -74,10 +74,10 @@
     "static/media/filled.svg": "/leonisdev/static/media/filled.aec8c9e28f5f1e1b8151d378ca0f54d8.svg",
     "static/media/outlined.svg": "/leonisdev/static/media/outlined.6a7162aad03906369fd9067735e90365.svg",
     "main.012c62b7.css.map": "/leonisdev/static/css/main.012c62b7.css.map",
-    "main.3317defd.js.map": "/leonisdev/static/js/main.3317defd.js.map"
+    "main.91bbb1e9.js.map": "/leonisdev/static/js/main.91bbb1e9.js.map"
   },
   "entrypoints": [
     "static/css/main.012c62b7.css",
-    "static/js/main.3317defd.js"
+    "static/js/main.91bbb1e9.js"
   ]
 }
