@@ -1,20 +1,19 @@
 import React from 'react'
 import style from './style.module.scss'
 import Container from '../Layout/Container'
-import { MotionButton } from '../UI/Button'
 import { Text } from '../UI/Text'
 import { Cross } from '../UI/Particles'
 import Circle from '../../assets/images/ellipse.png'
 
-import LionImage from '../../assets/images/lion_main.png'
+import LionImage from '../../assets/images/lion_1.png'
 
 import { motion } from 'framer-motion'
 import { TextAnimations } from '../../assets/animations/text'
 
-const Welcome: React.FC = () => {
+const Targets: React.FC = () => {
   return (
     <motion.main
-      className={style.Welcome}
+      className={style.Targets}
       initial="hidden"
       whileInView="visible"
       viewport={{ amount: 0.1, once: true }}
@@ -24,7 +23,6 @@ const Welcome: React.FC = () => {
       <Cross.Filled size="52px" className={style.Particles3} />
       <Cross.Outlined className={style.Particles4} />
       <Cross.Outlined className={style.Particles5} />
-      <Cross.Filled size="80px" className={style.Particles6} />
 
       <img src={Circle} alt="circle" className={style.Circle} />
 
@@ -45,33 +43,42 @@ const Welcome: React.FC = () => {
             WE ARE DESIGN
           </Text.H5>
 
-          <Text.H1 custom={3} variants={TextAnimations.leftToRight}>
-            LEONIS
-          </Text.H1>
-          <Text.H2 custom={4} variants={TextAnimations.leftToRight}>
-            DEV STUDIO
-          </Text.H2>
-
-          <Text.H4
-            custom={5}
+          <Text.H2
+            custom={3}
             variants={TextAnimations.leftToRight}
-            className={style.Line}
+            className={style.H2}
           >
-            WE CREATE FOR YOU
+            WE EXTEND
+          </Text.H2>
+          <Text.H4
+            custom={4}
+            variants={TextAnimations.leftToRight}
+            className={style.H4}
+          >
+            YOUR BUSINESS TO DIGITAL
           </Text.H4>
-          <MotionButton
+
+          <Text.Small
             custom={6}
             variants={TextAnimations.leftToRight}
-            className={style.Button}
+            className={style.WeAre}
           >
-            DISCUSS THE PROJECT
-          </MotionButton>
+            OUR MAIN AREAS ARE
+            <b>
+              DESIGN AUTOMATION, GRAPHIC DESIGN, WEBSITE DEVELOPMENT, URBAN
+              DESIGN, ARCHITECTURE, ENVIRONMENTAL DESIGN, NAVIGATION SYSTEMS,
+              INDUSTRIAL DESIGN, INTERFACE DESIGN, PETTERN CREATION, BOOK
+              PUBLISHING.
+            </b>
+            WE ARE A VARY CREATIVE AND VARY TECHNOLOGICAL COMPANY, COMBINING
+            RESEARCH AND ANALUTICS WITH MIND-BLOWING IDEAS.
+          </Text.Small>
         </div>
-
-        <img className={style.Image} src={LionImage} alt="lion" />
       </Container>
+
+      <img className={style.Image} src={LionImage} alt="lion" />
     </motion.main>
   )
 }
 
-export default Welcome
+export default Targets

@@ -11,9 +11,12 @@ import Container from '../Layout/Container'
 import { motion } from 'framer-motion'
 import { TextAnimations } from '../../assets/animations/text'
 
+import { NavLink } from 'react-router-dom'
+
 const Skills: React.FC = () => {
   return (
     <motion.section
+      id="about"
       className={style.Skills}
       initial="hidden"
       whileInView="visible"
@@ -77,7 +80,7 @@ const Skills: React.FC = () => {
               </motion.li>
             </ul>
 
-            <a href="/">
+            <NavLink to="magic">
               <MotionButton
                 className={style.Button}
                 initial="hidden"
@@ -88,7 +91,7 @@ const Skills: React.FC = () => {
               >
                 HOW DOES THE MAGIC HAPPEN?
               </MotionButton>
-            </a>
+            </NavLink>
           </motion.div>
 
           <div className={style.Separator}>

@@ -43,7 +43,7 @@ export const config = [
 
 const Portfolio: React.FC = () => {
   return (
-    <motion.section className={style.Portfolio}>
+    <motion.section id="portfolio" className={style.Portfolio}>
       <Container className={style.Content}>
         <Text.H3
           initial="hidden"

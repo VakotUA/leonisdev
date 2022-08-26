@@ -15,24 +15,26 @@ import { useAppSelector } from '../../store/hooks'
 import { motion } from 'framer-motion'
 import { TextAnimations } from '../../assets/animations/text'
 
+import { NavLink } from 'react-router-dom'
+
 export const Navigation: React.FC<{ className?: string }> = ({ className }) => {
   return (
     <motion.div className={className}>
       <motion.ul>
         <motion.li custom={0.5} variants={TextAnimations.topToBottom}>
-          <a href="/">HOME</a>
+          <NavLink to="">HOME</NavLink>
         </motion.li>
         <motion.li custom={1} variants={TextAnimations.topToBottom}>
-          <a href="/">ABOUT US</a>
+          <a href="#about">ABOUT US</a>
         </motion.li>
         <motion.li custom={1.5} variants={TextAnimations.topToBottom}>
-          <a href="/">SERVICES</a>
+          <a href="#services">SERVICES</a>
         </motion.li>
         <motion.li custom={2} variants={TextAnimations.topToBottom}>
-          <a href="/">PORTFOLIO</a>
+          <a href="#portfolio">PORTFOLIO</a>
         </motion.li>
         <motion.li custom={2.5} variants={TextAnimations.topToBottom}>
-          <a href="/">CONTACTS</a>
+          <a href="#contacts">CONTACTS</a>
         </motion.li>
       </motion.ul>
     </motion.div>

@@ -1,0 +1,131 @@
+@import '../../styles/variables.scss';
+
+.Stepper {
+  margin-top: 228px;
+  background-color: black;
+  box-shadow: 0 0 100px 100px black;
+
+  position: relative;
+  z-index: 2;
+  min-height: 960px;
+
+  .Circle1,
+  .Circle2 {
+    position: absolute;
+  }
+
+  .Circle1 {
+    left: 0;
+    top: 0;
+    transform: translate(-85%, -40%);
+  }
+  .Circle2 {
+    right: 0;
+    top: 0;
+    transform: translate(82%, -10%);
+  }
+}
+
+.Steps {
+  margin-top: 80px;
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  padding: 0 50px;
+  gap: 1rem;
+
+  .Step {
+    flex: 0 1 25%;
+    position: relative;
+
+    small {
+      position: absolute;
+      top: 68px;
+      left: 0;
+    }
+
+    .Icon {
+      width: 80px !important;
+    }
+
+    .Line {
+      content: '';
+      height: 2px;
+      flex: 1 1;
+      background-color: white;
+      position: relative;
+
+      &::before,
+      &::after {
+        border: 7px solid transparent;
+        position: absolute;
+        content: '';
+        left: 50%;
+        top: 50%;
+      }
+      &::before {
+        border-bottom-color: white;
+        transform: translate(-50%, -100%);
+      }
+      &::after {
+        border-top-color: white;
+        transform: translate(-50%, 0);
+      }
+    }
+
+    > div {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+
+  p {
+    margin-top: 25px;
+    margin-right: 1vw;
+    font-weight: 300;
+  }
+
+  .Title {
+    font-weight: 700;
+  }
+
+  @media (max-width: $md2) {
+    flex-direction: column;
+    padding: 0 20px;
+
+    .Step {
+      display: flex;
+      width: 100%;
+      min-width: 320px;
+      gap: 2rem;
+
+      small {
+        top: 36px;
+        font-size: 10px;
+      }
+
+      > div {
+        flex-direction: column;
+      }
+
+      .Icon {
+        width: 40px !important;
+      }
+
+      .Line {
+        width: 2px;
+      }
+
+      .Title {
+        position: absolute;
+        top: -48px;
+        left: 110px;
+      }
+
+      p {
+        margin-bottom: 80px;
+      }
+    }
+  }
+}

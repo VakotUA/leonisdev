@@ -16,6 +16,7 @@ import { TextAnimations } from '../../assets/animations/text'
 const Contacts: React.FC = () => {
   return (
     <motion.footer
+      id="contacts"
       className={style.Contacts}
       initial="hidden"
       whileInView="visible"
