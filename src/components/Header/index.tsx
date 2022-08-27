@@ -1,7 +1,6 @@
 import React from 'react'
 import style from './style.module.scss'
-import Logo from '../../assets/images/only_lion_logo.png'
-import LogoText from '../../assets/images/logo_text_leonis.png'
+import { ReactComponent as LogoSVG } from '../../assets/svgs/lion_logo_text_white.svg'
 
 import Telegram from '../../assets/images/telegram.png'
 import Instagram from '../../assets/images/instagram.png'
@@ -52,20 +51,9 @@ const Header: React.FC = () => {
       className={style.Header}
     >
       <Container className={style.Content}>
-        <a href="/" className={style.Logo}>
-          <motion.img
-            custom={0.5}
-            variants={TextAnimations.leftToRight}
-            src={Logo}
-            alt="logo"
-          />
-          <motion.img
-            custom={1}
-            variants={TextAnimations.leftToRight}
-            src={LogoText}
-            alt="text"
-          />
-        </a>
+        <motion.a href="/" custom={2} variants={TextAnimations.leftToRight}>
+          <LogoSVG className={style.Logo} />
+        </motion.a>
 
         <Navigation
           className={`${style.Navigation} ${menu?.isActive && style.Active}`}

@@ -1,11 +1,13 @@
 @import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
 
 .Skills {
   position: relative;
   width: 100%;
   margin-top: 160px;
+  margin-bottom: 50px;
   z-index: 2;
-  min-height: 960px;
+  // min-height: 960px;
 
   .Circle1,
   .Circle2 {
@@ -49,44 +51,47 @@
     }
 
     .Text {
+      padding-left: calc(4px + (10 - 4) * ((100vw - 320px) / (1600 - 320)));
+
       margin-top: 24px;
       p {
+        margin-left: 1px;
         margin-bottom: 24px;
       }
     }
   }
 
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
+  // ul {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   flex-direction: row-reverse;
 
-    padding: 36px;
+  //   padding: 36px;
 
-    gap: 1.75rem 0;
+  //   gap: 1.75rem 0;
 
-    li {
-      flex: 1 1 350px;
-      padding-left: 30px;
-      position: relative;
+  //   li {
+  //     flex: 1 1 350px;
+  //     padding-left: 30px;
+  //     position: relative;
 
-      &:last-of-type {
-        margin-bottom: 0;
-      }
+  //     &:last-of-type {
+  //       margin-bottom: 0;
+  //     }
 
-      &::before {
-        content: '';
-        width: 8px;
-        height: 8px;
-        background-color: white;
+  //     &::before {
+  //       content: '';
+  //       width: 8px;
+  //       height: 8px;
+  //       background-color: white;
 
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: rotate(45deg) translateY(-75%);
-      }
-    }
-  }
+  //       position: absolute;
+  //       top: 50%;
+  //       left: 0;
+  //       transform: rotate(45deg) translateY(-75%);
+  //     }
+  //   }
+  // }
 }
 
 .Separator {
@@ -103,4 +108,46 @@
 
 .CustomLetterSpacing {
   letter-spacing: 0.13rem !important;
+}
+
+.ListCollumns {
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 80px;
+  display: flex;
+  gap: 0 8.5rem;
+
+  padding-left: calc(4px + (10 - 4) * ((100vw - 320px) / (1600 - 320)));
+  p {
+    margin-left: 30px;
+    position: relative;
+    @include fluid-type(320px, 1600px, 12px, 18px);
+    line-height: 2;
+
+    &::before,
+    &::after {
+      border: 6px solid transparent;
+      position: absolute;
+      content: '';
+      left: -30px;
+      top: 50%;
+    }
+    &::before {
+      border-bottom-color: white;
+      transform: translateY(-100%);
+    }
+    &::after {
+      border-top-color: white;
+    }
+  }
+}
+
+.Button {
+  padding: 0 50px;
+  max-width: 700px;
+}
+
+.Arrow {
+  height: 20px;
+  margin-left: 20px;
 }

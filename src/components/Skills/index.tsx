@@ -12,6 +12,7 @@ import { motion } from 'framer-motion'
 import { TextAnimations } from '../../assets/animations/text'
 
 import { NavLink } from 'react-router-dom'
+import { ReactComponent as Arrow } from '../../assets/svgs/arrow.svg'
 
 const Skills: React.FC = () => {
   return (
@@ -50,7 +51,8 @@ const Skills: React.FC = () => {
               </Text.H5>
             </div>
 
-            <ul>
+            {/* А мне тоже похуй */}
+            {/* <ul>
               <motion.li custom={1} variants={TextAnimations.topToBottom}>
                 <Text.P>LANDING</Text.P>
               </motion.li>
@@ -78,7 +80,41 @@ const Skills: React.FC = () => {
               <motion.li custom={5} variants={TextAnimations.topToBottom}>
                 <Text.P>MYSQL, POSTGRESQL</Text.P>
               </motion.li>
-            </ul>
+            </ul> */}
+
+            <div className={style.ListCollumns}>
+              <div>
+                <Text.P custom={1} variants={TextAnimations.topToBottom}>
+                  LANDING
+                </Text.P>
+                <Text.P custom={1.5} variants={TextAnimations.topToBottom}>
+                  BLOG
+                </Text.P>
+                <Text.P custom={2} variants={TextAnimations.topToBottom}>
+                  E-COMMERCE
+                </Text.P>
+                <Text.P custom={2.5} variants={TextAnimations.topToBottom}>
+                  WEB CRM
+                </Text.P>
+              </div>
+              <div>
+                <Text.P custom={3} variants={TextAnimations.topToBottom}>
+                  UI/UX DESIGN
+                </Text.P>
+                <Text.P custom={3.5} variants={TextAnimations.topToBottom}>
+                  HTML5, CSS3
+                </Text.P>
+                <Text.P custom={4} variants={TextAnimations.topToBottom}>
+                  JAVASCRIPT, JQUERY, JQUERY UI, VUEJS
+                </Text.P>
+                <Text.P custom={4.5} variants={TextAnimations.topToBottom}>
+                  DJANGO, AIOGRAM, SELENIUM
+                </Text.P>
+                <Text.P custom={5} variants={TextAnimations.topToBottom}>
+                  MYSQL, POSTGRESQL
+                </Text.P>
+              </div>
+            </div>
 
             <NavLink to="magic">
               <MotionButton
@@ -90,6 +126,7 @@ const Skills: React.FC = () => {
                 variants={TextAnimations.topToBottom}
               >
                 HOW DOES THE MAGIC HAPPEN?
+                <Arrow className={style.Arrow} />
               </MotionButton>
             </NavLink>
           </motion.div>

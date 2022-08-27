@@ -36,7 +36,11 @@ const Media: React.FC = () => {
         style={{ backgroundImage: `url(${EyesImage})` }}
       >
         <Container>
-          <ul>
+          <motion.ul
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ amount: 0.5, once: true }}
+          >
             <motion.li custom={1} variants={TextAnimations.bottomToTop}>
               <a href="/">
                 <img src={Telegram} alt="telegram" />
@@ -67,7 +71,7 @@ const Media: React.FC = () => {
                 <img src={YouTube} alt="telegram" />
               </a>
             </motion.li>
-          </ul>
+          </motion.ul>
         </Container>
       </div>
     </motion.section>

@@ -1,4 +1,5 @@
 @import '../../styles/variables.scss';
+@import '../../styles//mixins.scss';
 
 .Contacts {
   width: 100%;
@@ -19,6 +20,13 @@
   h3,
   h5 {
     margin: 0 36px;
+  }
+
+  h5 {
+    @include fluid-type(320px, 1600px, 12px, 28px);
+    font-weight: 900;
+    letter-spacing: 0.15rem;
+    word-spacing: 0;
   }
 }
 
@@ -60,16 +68,15 @@
     span {
       display: inline-flex;
       align-items: center;
-      gap: 1rem;
+      gap: 1.25rem;
 
-      // custom font-size
       p {
-        font-size: calc(18px + 12 * (100vw / 1920));
+        @include fluid-type(320px, 1600px, 16px, 36px);
         white-space: nowrap;
       }
 
       img {
-        height: 32px;
+        height: calc(25px + (50 - 25) * ((100vw - 320px) / (1600 - 320)));
       }
     }
 

@@ -59,14 +59,15 @@ const Welcome: React.FC = () => {
           >
             WE CREATE FOR YOU
           </Text.H4>
-          <MotionButton
-            custom={6}
-            variants={TextAnimations.leftToRight}
-            className={style.Button}
-          >
-            DISCUSS THE PROJECT
-          </MotionButton>
         </div>
+
+        <MotionButton
+          custom={6}
+          variants={TextAnimations.leftToRight}
+          className={style.Button}
+        >
+          DISCUSS THE PROJECT
+        </MotionButton>
 
         <img className={style.Image} src={LionImage} alt="lion" />
       </Container>

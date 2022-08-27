@@ -3,6 +3,7 @@ import style from './style.module.scss'
 import { Button } from '../Button'
 import { Text } from '../Text'
 import { Cross } from '../Particles'
+import { ReactComponent as Arrow } from '../../../assets/svgs/arrow.svg'
 
 interface IForm {
   name: string
@@ -94,6 +95,7 @@ export const ContactForm: React.FC = () => {
 
         <Button className={style.Button} type="submit">
           SEND MESSAGE
+          <Arrow className={style.Arrow} />
         </Button>
       </div>
     </form>
