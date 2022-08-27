@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/leonisdev/static/css/main.012c62b7.css",
-    "main.js": "/leonisdev/static/js/main.91bbb1e9.js",
+    "main.css": "/leonisdev/static/css/main.ae62eaa2.css",
+    "main.js": "/leonisdev/static/js/main.5a7fda71.js",
     "static/media/lion_1.png": "/leonisdev/static/media/lion_1.b3e3ade27be3bc9c7092.png",
     "static/media/lion_main.png": "/leonisdev/static/media/lion_main.d0dcca6258d765033a1b.png",
     "static/media/lion_portfolio.png": "/leonisdev/static/media/lion_portfolio.a81bb08690e38e78a404.png",
@@ -70,14 +70,16 @@
     "static/media/Gilroy-Thin.woff": "/leonisdev/static/media/Gilroy-Thin.6e2e7d472d0beb6b3cef.woff",
     "static/media/Gilroy-ExtraBold.woff": "/leonisdev/static/media/Gilroy-ExtraBold.cb761043a2e505ff53c1.woff",
     "static/media/Gilroy-Regular.woff": "/leonisdev/static/media/Gilroy-Regular.31d54a4b841c0e438f13.woff",
+    "static/media/lion_logo_text_white.svg": "/leonisdev/static/media/lion_logo_text_white.7d434a69cf9dd5361fdc61aef9260148.svg",
     "index.html": "/leonisdev/index.html",
     "static/media/filled.svg": "/leonisdev/static/media/filled.aec8c9e28f5f1e1b8151d378ca0f54d8.svg",
     "static/media/outlined.svg": "/leonisdev/static/media/outlined.6a7162aad03906369fd9067735e90365.svg",
-    "main.012c62b7.css.map": "/leonisdev/static/css/main.012c62b7.css.map",
-    "main.91bbb1e9.js.map": "/leonisdev/static/js/main.91bbb1e9.js.map"
+    "static/media/arrow.svg": "/leonisdev/static/media/arrow.9677d8ab170baa53abb403d94b386ebd.svg",
+    "main.ae62eaa2.css.map": "/leonisdev/static/css/main.ae62eaa2.css.map",
+    "main.5a7fda71.js.map": "/leonisdev/static/js/main.5a7fda71.js.map"
   },
   "entrypoints": [
-    "static/css/main.012c62b7.css",
-    "static/js/main.91bbb1e9.js"
+    "static/css/main.ae62eaa2.css",
+    "static/js/main.5a7fda71.js"
   ]
 }
