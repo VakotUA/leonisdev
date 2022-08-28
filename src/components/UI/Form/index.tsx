@@ -79,7 +79,8 @@ export const ContactForm: React.FC = () => {
         </div>
 
         <div className={style.formGroup}>
-          <textarea
+          <input
+            type="text"
             name="message"
             placeholder="Message"
             onChange={(e) => {
@@ -88,7 +89,8 @@ export const ContactForm: React.FC = () => {
             value={details.message}
             required
           />
-          <label htmlFor="phone">
+
+          <label htmlFor="message">
             <Text.P>MESSAGE</Text.P>
           </label>
         </div>

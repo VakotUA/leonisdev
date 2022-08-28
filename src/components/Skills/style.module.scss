@@ -6,23 +6,37 @@
   width: 100%;
   margin-top: 160px;
   margin-bottom: 50px;
+
+  @media (max-width: $md3) {
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+
   z-index: 2;
-  // min-height: 960px;
 
   .Circle1,
   .Circle2 {
     position: absolute;
+    z-index: -1;
   }
 
   .Circle1 {
     left: 0;
     top: 0;
     transform: translate(-85%, -40%);
+
+    @media (max-width: $md4) {
+      transform: translate(-85%, -40%) scale(0.8);
+    }
   }
   .Circle2 {
     right: 0;
     top: 0;
     transform: translate(82%, -10%);
+
+    @media (max-width: $md4) {
+      transform: translate(82%, -10%) scale(0.9);
+    }
   }
 }
 
@@ -42,6 +56,9 @@
   .Block {
     flex: 1;
     margin-bottom: 80px;
+    @media (max-width: $md3) {
+      margin-bottom: 20px;
+    }
 
     z-index: 2;
 
@@ -60,38 +77,6 @@
       }
     }
   }
-
-  // ul {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   flex-direction: row-reverse;
-
-  //   padding: 36px;
-
-  //   gap: 1.75rem 0;
-
-  //   li {
-  //     flex: 1 1 350px;
-  //     padding-left: 30px;
-  //     position: relative;
-
-  //     &:last-of-type {
-  //       margin-bottom: 0;
-  //     }
-
-  //     &::before {
-  //       content: '';
-  //       width: 8px;
-  //       height: 8px;
-  //       background-color: white;
-
-  //       position: absolute;
-  //       top: 50%;
-  //       left: 0;
-  //       transform: rotate(45deg) translateY(-75%);
-  //     }
-  //   }
-  // }
 }
 
 .Separator {
@@ -113,7 +98,10 @@
 .ListCollumns {
   flex-wrap: wrap;
   margin-top: 10px;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
+  @media (max-width: $md3) {
+    margin-bottom: 40px;
+  }
   display: flex;
   gap: 0 8.5rem;
 

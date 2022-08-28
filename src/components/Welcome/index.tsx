@@ -19,6 +19,52 @@ const Welcome: React.FC = () => {
       whileInView="visible"
       viewport={{ amount: 0.1, once: true }}
     >
+      <Container className={style.Content}>
+        <div className={style.Greetings}>
+          <div>
+            <Text.H5
+              custom={1}
+              variants={TextAnimations.leftToRight}
+              className={style.Line}
+            >
+              WE ARE CODE
+            </Text.H5>
+            <Text.H5
+              custom={1}
+              variants={TextAnimations.leftToRight}
+              className={style.Line}
+            >
+              WE ARE DESIGN
+            </Text.H5>
+
+            <Text.H1 custom={3} variants={TextAnimations.leftToRight}>
+              LEONIS
+            </Text.H1>
+            <Text.H2 custom={4} variants={TextAnimations.leftToRight}>
+              DEV STUDIO
+            </Text.H2>
+
+            <Text.H4
+              custom={5}
+              variants={TextAnimations.leftToRight}
+              className={style.Line}
+            >
+              WE CREATE FOR YOU
+            </Text.H4>
+          </div>
+
+          <MotionButton
+            custom={6}
+            variants={TextAnimations.leftToRight}
+            className={style.Button}
+          >
+            DISCUSS THE PROJECT
+          </MotionButton>
+        </div>
+
+        <img className={style.Image} src={LionImage} alt="lion" />
+      </Container>
+
       <Cross.Filled size="80px" className={style.Particles1} />
       <Cross.Filled size="44px" className={style.Particles2} />
       <Cross.Filled size="52px" className={style.Particles3} />
@@ -27,50 +73,6 @@ const Welcome: React.FC = () => {
       <Cross.Filled size="80px" className={style.Particles6} />
 
       <img src={Circle} alt="circle" className={style.Circle} />
-
-      <Container className={style.Content}>
-        <div className={style.Greetings}>
-          <Text.H5
-            custom={1}
-            variants={TextAnimations.leftToRight}
-            className={style.Line}
-          >
-            WE ARE CODE
-          </Text.H5>
-          <Text.H5
-            custom={1}
-            variants={TextAnimations.leftToRight}
-            className={style.Line}
-          >
-            WE ARE DESIGN
-          </Text.H5>
-
-          <Text.H1 custom={3} variants={TextAnimations.leftToRight}>
-            LEONIS
-          </Text.H1>
-          <Text.H2 custom={4} variants={TextAnimations.leftToRight}>
-            DEV STUDIO
-          </Text.H2>
-
-          <Text.H4
-            custom={5}
-            variants={TextAnimations.leftToRight}
-            className={style.Line}
-          >
-            WE CREATE FOR YOU
-          </Text.H4>
-        </div>
-
-        <MotionButton
-          custom={6}
-          variants={TextAnimations.leftToRight}
-          className={style.Button}
-        >
-          DISCUSS THE PROJECT
-        </MotionButton>
-
-        <img className={style.Image} src={LionImage} alt="lion" />
-      </Container>
     </motion.main>
   )
 }

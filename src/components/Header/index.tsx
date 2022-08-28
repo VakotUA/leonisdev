@@ -14,6 +14,7 @@ import { useAppSelector } from '../../store/hooks'
 import { motion } from 'framer-motion'
 import { TextAnimations } from '../../assets/animations/text'
 
+import { HashLink as Link } from 'react-router-hash-link'
 import { NavLink } from 'react-router-dom'
 
 export const Navigation: React.FC<{ className?: string }> = ({ className }) => {
@@ -21,19 +22,19 @@ export const Navigation: React.FC<{ className?: string }> = ({ className }) => {
     <motion.div className={className}>
       <motion.ul>
         <motion.li custom={0.5} variants={TextAnimations.topToBottom}>
-          <NavLink to="">HOME</NavLink>
+          <Link to="">HOME</Link>
         </motion.li>
         <motion.li custom={1} variants={TextAnimations.topToBottom}>
-          <a href="#about">ABOUT US</a>
+          <Link to="#about">ABOUT US</Link>
         </motion.li>
         <motion.li custom={1.5} variants={TextAnimations.topToBottom}>
-          <a href="#services">SERVICES</a>
+          <Link to="#services">SERVICES</Link>
         </motion.li>
         <motion.li custom={2} variants={TextAnimations.topToBottom}>
-          <a href="#portfolio">PORTFOLIO</a>
+          <Link to="#portfolio">PORTFOLIO</Link>
         </motion.li>
         <motion.li custom={2.5} variants={TextAnimations.topToBottom}>
-          <a href="#contacts">CONTACTS</a>
+          <Link to="#contacts">CONTACTS</Link>
         </motion.li>
       </motion.ul>
     </motion.div>
@@ -51,9 +52,11 @@ const Header: React.FC = () => {
       className={style.Header}
     >
       <Container className={style.Content}>
-        <motion.a href="/" custom={2} variants={TextAnimations.leftToRight}>
-          <LogoSVG className={style.Logo} />
-        </motion.a>
+        <motion.div custom={2} variants={TextAnimations.leftToRight}>
+          <NavLink to="/">
+            <LogoSVG className={style.Logo} />
+          </NavLink>
+        </motion.div>
 
         <Navigation
           className={`${style.Navigation} ${menu?.isActive && style.Active}`}

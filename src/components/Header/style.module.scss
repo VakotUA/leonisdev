@@ -35,6 +35,8 @@
   z-index: 120;
 
   @media (max-width: $md4) {
+    height: 60px;
+
     margin-right: 20px;
   }
 }

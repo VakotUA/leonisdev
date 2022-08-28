@@ -11,7 +11,7 @@ import Container from '../Layout/Container'
 import { motion } from 'framer-motion'
 import { TextAnimations } from '../../assets/animations/text'
 
-import { NavLink } from 'react-router-dom'
+import { NavLink as Link } from 'react-router-dom'
 import { ReactComponent as Arrow } from '../../assets/svgs/arrow.svg'
 
 const Skills: React.FC = () => {
@@ -23,9 +23,6 @@ const Skills: React.FC = () => {
       whileInView="visible"
       viewport={{ amount: 0.2, once: true }}
     >
-      <img src={Circle} alt="circle" className={style.Circle1} />
-      <img src={Circle} alt="circle" className={style.Circle2} />
-
       <Container className={style.Content}>
         <Text.H2 custom={1} variants={TextAnimations.leftToRight}>
           WHAT WE DO
@@ -50,37 +47,6 @@ const Skills: React.FC = () => {
                 A LOT OF THINGS THAT WE ARE GOOD AT
               </Text.H5>
             </div>
-
-            {/* А мне тоже похуй */}
-            {/* <ul>
-              <motion.li custom={1} variants={TextAnimations.topToBottom}>
-                <Text.P>LANDING</Text.P>
-              </motion.li>
-              <motion.li custom={1.5} variants={TextAnimations.topToBottom}>
-                <Text.P>BLOG</Text.P>
-              </motion.li>
-              <motion.li custom={2} variants={TextAnimations.topToBottom}>
-                <Text.P>E-COMMERCE</Text.P>
-              </motion.li>
-              <motion.li custom={2.5} variants={TextAnimations.topToBottom}>
-                <Text.P>WEB CRM</Text.P>
-              </motion.li>
-              <motion.li custom={3} variants={TextAnimations.topToBottom}>
-                <Text.P>UI/UX DESIGN</Text.P>
-              </motion.li>
-              <motion.li custom={3.5} variants={TextAnimations.topToBottom}>
-                <Text.P>HTML5, CSS3</Text.P>
-              </motion.li>
-              <motion.li custom={4} variants={TextAnimations.topToBottom}>
-                <Text.P>JAVASCRIPT, JQUERY, JQUERY UI, VUEJS</Text.P>
-              </motion.li>
-              <motion.li custom={4.5} variants={TextAnimations.topToBottom}>
-                <Text.P>DJANGO, AIOGRAM, SELENIUM</Text.P>
-              </motion.li>
-              <motion.li custom={5} variants={TextAnimations.topToBottom}>
-                <Text.P>MYSQL, POSTGRESQL</Text.P>
-              </motion.li>
-            </ul> */}
 
             <div className={style.ListCollumns}>
               <div>
@@ -116,7 +82,7 @@ const Skills: React.FC = () => {
               </div>
             </div>
 
-            <NavLink to="magic">
+            <Link to="magic/">
               <MotionButton
                 className={style.Button}
                 initial="hidden"
@@ -128,7 +94,7 @@ const Skills: React.FC = () => {
                 HOW DOES THE MAGIC HAPPEN?
                 <Arrow className={style.Arrow} />
               </MotionButton>
-            </NavLink>
+            </Link>
           </motion.div>
 
           <div className={style.Separator}>
@@ -174,6 +140,9 @@ const Skills: React.FC = () => {
           </motion.div>
         </div>
       </Container>
+
+      <img src={Circle} alt="circle" className={style.Circle1} />
+      <img src={Circle} alt="circle" className={style.Circle2} />
     </motion.section>
   )
 }

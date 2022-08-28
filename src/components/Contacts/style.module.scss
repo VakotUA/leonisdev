@@ -6,6 +6,12 @@
   background-color: black;
 
   padding-top: 120px;
+
+  @media (max-width: $md3) {
+    padding-top: 50px;
+  }
+
+  overflow: hidden;
 }
 
 .Content {
@@ -54,9 +60,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
 
     margin-top: 100px;
+
+    @media (max-width: $md3) {
+      margin-top: 20px;
+    }
 
     > div:first-of-type {
       display: flex;
@@ -83,7 +92,7 @@
     position: relative;
 
     .Image {
-      bottom: 0;
+      bottom: -150px;
       position: absolute;
 
       @media (max-width: $md3) {
