@@ -4,12 +4,6 @@
 .Welcome {
   position: relative;
 
-  // min-height: calc(100vh - 170px);
-
-  // @media (max-width: $md3) {
-  //   min-height: calc(100vh - 110px);
-  // }
-
   .Particles1,
   .Particles2,
   .Particles3,
@@ -32,13 +26,17 @@
     left: 122px;
     bottom: -150px;
 
-    @media (max-width: $md3) {
+    @media (max-width: $md2) {
       display: none;
     }
   }
   .Particles4 {
     top: 230px;
     left: 70px;
+
+    @media (max-width: $md2) {
+      display: none;
+    }
   }
   .Particles5 {
     top: 780px;

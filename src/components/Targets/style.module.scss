@@ -51,6 +51,10 @@
   .Particles4 {
     top: 230px;
     left: 70px;
+
+    @media (max-width: $md2) {
+      display: none;
+    }
   }
   .Particles5 {
     top: 780px;
