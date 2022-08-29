@@ -13,8 +13,7 @@ body {
   min-height: 100vh;
   position: relative;
 
-  max-width: 100%;
-  overflow-x: hidden;
+  max-width: 100vw;
 
   background: url('./../assets/images/sparks_bg.jpg');
   background-size: contain;
@@ -22,4 +21,13 @@ body {
   background-position: 0 0;
 
   scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body.scroll-lock {
+  overflow-y: hidden;
 }

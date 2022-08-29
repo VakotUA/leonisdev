@@ -9,7 +9,8 @@ import Facebook from '../../assets/images/facebook.png'
 import Container from '../Layout/Container'
 
 import { MenuButton } from '../UI/MenuButton'
-import { useAppSelector } from '../../store/hooks'
+import { useAppDispatch, useAppSelector } from '../../store/hooks'
+import { menuSlice } from '../../store/reducers/menu'
 
 import { motion } from 'framer-motion'
 import { TextAnimations } from '../../assets/animations/text'
@@ -18,23 +19,39 @@ import { HashLink as Link } from 'react-router-hash-link'
 import { NavLink } from 'react-router-dom'
 
 export const Navigation: React.FC<{ className?: string }> = ({ className }) => {
+  const dispatch = useAppDispatch()
+  const { toggleMenu } = menuSlice.actions
+
   return (
-    <motion.div className={className}>
+    <motion.div className={className} id="nav">
       <motion.ul>
         <motion.li custom={0.5} variants={TextAnimations.topToBottom}>
-          <Link to="">HOME</Link>
+          <Link to="" onClick={() => dispatch(toggleMenu(false))}>
+            HOME
+          </Link>
         </motion.li>
         <motion.li custom={1} variants={TextAnimations.topToBottom}>
-          <Link to="/#about">ABOUT US</Link>
+          <Link to="/#about" onClick={() => dispatch(toggleMenu(false))}>
+            ABOUT US
+          </Link>
         </motion.li>
         <motion.li custom={1.5} variants={TextAnimations.topToBottom}>
-          <Link to="#services">SERVICES</Link>
+          <Link
+            to="/magic#services"
+            onClick={() => dispatch(toggleMenu(false))}
+          >
+            SERVICES
+          </Link>
         </motion.li>
         <motion.li custom={2} variants={TextAnimations.topToBottom}>
-          <Link to="/#portfolio">PORTFOLIO</Link>
+          <Link to="/#portfolio" onClick={() => dispatch(toggleMenu(false))}>
+            PORTFOLIO
+          </Link>
         </motion.li>
         <motion.li custom={2.5} variants={TextAnimations.topToBottom}>
-          <Link to="#contacts">CONTACTS</Link>
+          <Link to="#contacts" onClick={() => dispatch(toggleMenu(false))}>
+            CONTACTS
+          </Link>
         </motion.li>
       </motion.ul>
     </motion.div>
@@ -64,13 +81,13 @@ const Header: React.FC = () => {
 
         <div className={style.Links}>
           <motion.a custom={0.5} variants={TextAnimations.rightToLeft} href="/">
-            <img src={Telegram} alt="" />
+            <img src={Telegram} alt="telegram" />
           </motion.a>
           <motion.a custom={1} variants={TextAnimations.rightToLeft} href="/">
-            <img src={Instagram} alt="" />
+            <img src={Instagram} alt="instagram" />
           </motion.a>
           <motion.a custom={1.5} variants={TextAnimations.rightToLeft} href="/">
-            <img src={Facebook} alt="" />
+            <img src={Facebook} alt="facebook" />
           </motion.a>
 
           <div className={style.Burger}>

@@ -12,8 +12,8 @@ export const menuSlice = createSlice({
   name: 'theme',
   initialState,
   reducers: {
-    toggleMenu(state) {
-      state.isActive = !state.isActive
+    toggleMenu(state, action: { payload: boolean }) {
+      state.isActive = action.payload
     },
   },
 })
