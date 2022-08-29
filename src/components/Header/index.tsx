@@ -25,13 +25,13 @@ export const Navigation: React.FC<{ className?: string }> = ({ className }) => {
           <Link to="">HOME</Link>
         </motion.li>
         <motion.li custom={1} variants={TextAnimations.topToBottom}>
-          <Link to="#about">ABOUT US</Link>
+          <Link to="/#about">ABOUT US</Link>
         </motion.li>
         <motion.li custom={1.5} variants={TextAnimations.topToBottom}>
           <Link to="#services">SERVICES</Link>
         </motion.li>
         <motion.li custom={2} variants={TextAnimations.topToBottom}>
-          <Link to="#portfolio">PORTFOLIO</Link>
+          <Link to="/#portfolio">PORTFOLIO</Link>
         </motion.li>
         <motion.li custom={2.5} variants={TextAnimations.topToBottom}>
           <Link to="#contacts">CONTACTS</Link>

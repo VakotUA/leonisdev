@@ -63,13 +63,13 @@ const Targets: React.FC = () => {
             variants={TextAnimations.leftToRight}
             className={style.WeAre}
           >
-            OUR MAIN AREAS ARE
+            OUR MAIN AREAS ARE{' '}
             <b>
               DESIGN AUTOMATION, GRAPHIC DESIGN, WEBSITE DEVELOPMENT, URBAN
               DESIGN, ARCHITECTURE, ENVIRONMENTAL DESIGN, NAVIGATION SYSTEMS,
               INDUSTRIAL DESIGN, INTERFACE DESIGN, PETTERN CREATION, BOOK
               PUBLISHING.
-            </b>
+            </b>{' '}
             WE ARE A VARY CREATIVE AND VARY TECHNOLOGICAL COMPANY, COMBINING
             RESEARCH AND ANALUTICS WITH MIND-BLOWING IDEAS.
           </Text.Small>

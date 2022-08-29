@@ -32,27 +32,34 @@
 }
 
 .Background {
-  height: 320px;
   width: 100%;
+  padding: 50px 25px;
   background-size: cover;
-  background-position: center left;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-position: center;
+
+  @media (max-width: $md5) {
+    padding: 25px;
+  }
 
   ul {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 5.5rem 0;
+    justify-content: space-around;
 
     flex-wrap: wrap;
 
+    padding: 60px 0;
+
     @media (max-width: $md3) {
       gap: 3rem 0;
+      padding: 20px 0;
     }
     @media (max-width: $md4) {
       gap: 2rem 0;
+      padding: 10px 0;
     }
 
     li {
@@ -61,10 +68,6 @@
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-
-      @media (max-width: $md3) {
-        flex: 0 1 30%;
-      }
 
       a {
         display: inline-block;
@@ -79,6 +82,12 @@
 
           @media (max-width: $md3) {
             width: 64px;
+          }
+          @media (max-width: $md4) {
+            width: 36px;
+          }
+          @media (max-width: $md5) {
+            width: 24px;
           }
         }
       }

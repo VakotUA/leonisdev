@@ -69,10 +69,12 @@
   padding-bottom: 10px;
   padding-top: 100px;
 
-  min-height: calc(100vh - 170px);
+  min-height: 400px;
+  max-height: 910px;
+  height: calc(100vh - 170px);
 
   @media (max-width: $md3) {
-    min-height: calc(100vh - 110px);
+    height: auto;
   }
 
   > div {
@@ -99,8 +101,9 @@
     height: 120%;
   }
   @media (max-width: $md4) {
-    left: 40%;
-    height: 100%;
+    top: 40%;
+    left: 60%;
+    height: 500px;
   }
   @media (max-width: $md5) {
     left: 30%;

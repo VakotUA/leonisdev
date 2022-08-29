@@ -35,44 +35,44 @@ const Media: React.FC = () => {
         className={style.Background}
         style={{ backgroundImage: `url(${EyesImage})` }}
       >
-        <Container>
-          <motion.ul
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ amount: 0.5, once: true }}
-          >
-            <motion.li custom={1} variants={TextAnimations.bottomToTop}>
-              <a href="/">
-                <img src={Telegram} alt="telegram" />
-              </a>
-            </motion.li>
-            <motion.li custom={2} variants={TextAnimations.bottomToTop}>
-              <a href="/">
-                <img src={Instagram} alt="telegram" />
-              </a>
-            </motion.li>
-            <motion.li custom={3} variants={TextAnimations.bottomToTop}>
-              <a href="/">
-                <img src={LinkedIn} alt="telegram" />
-              </a>
-            </motion.li>
-            <motion.li custom={3} variants={TextAnimations.bottomToTop}>
-              <a href="/">
-                <img src={Facebook} alt="telegram" />
-              </a>
-            </motion.li>
-            <motion.li custom={2} variants={TextAnimations.bottomToTop}>
-              <a href="/">
-                <img src={Twitter} alt="telegram" />
-              </a>
-            </motion.li>
-            <motion.li custom={1} variants={TextAnimations.bottomToTop}>
-              <a href="/">
-                <img src={YouTube} alt="telegram" />
-              </a>
-            </motion.li>
-          </motion.ul>
-        </Container>
+        {/* <Container> */}
+        <motion.ul
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ amount: 0.5, once: true }}
+        >
+          <motion.li custom={1} variants={TextAnimations.bottomToTop}>
+            <a href="/">
+              <img src={Telegram} alt="telegram" />
+            </a>
+          </motion.li>
+          <motion.li custom={2} variants={TextAnimations.bottomToTop}>
+            <a href="/">
+              <img src={Instagram} alt="telegram" />
+            </a>
+          </motion.li>
+          <motion.li custom={3} variants={TextAnimations.bottomToTop}>
+            <a href="/">
+              <img src={LinkedIn} alt="telegram" />
+            </a>
+          </motion.li>
+          <motion.li custom={3} variants={TextAnimations.bottomToTop}>
+            <a href="/">
+              <img src={Facebook} alt="telegram" />
+            </a>
+          </motion.li>
+          <motion.li custom={2} variants={TextAnimations.bottomToTop}>
+            <a href="/">
+              <img src={Twitter} alt="telegram" />
+            </a>
+          </motion.li>
+          <motion.li custom={1} variants={TextAnimations.bottomToTop}>
+            <a href="/">
+              <img src={YouTube} alt="telegram" />
+            </a>
+          </motion.li>
+        </motion.ul>
+        {/* </Container> */}
       </div>
     </motion.section>
   )
