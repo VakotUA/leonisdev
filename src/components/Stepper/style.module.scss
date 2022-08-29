@@ -1,7 +1,15 @@
 @import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
 
 .Stepper {
   margin-top: 228px;
+  @media (max-width: $md3) {
+    margin-top: 100px;
+  }
+  @media (max-width: $md4) {
+    margin-top: 20px;
+  }
+
   background-color: black;
   box-shadow: 0 0 100px 100px black;
 
@@ -9,29 +17,26 @@
   z-index: 2;
   min-height: 960px;
 
-  .Circle1,
-  .Circle2 {
+  .Circle {
     position: absolute;
-  }
-
-  .Circle1 {
+    z-index: -1;
     left: 0;
     top: 0;
     transform: translate(-85%, -40%);
-  }
-  .Circle2 {
-    right: 0;
-    top: 0;
-    transform: translate(82%, -10%);
+
+    @media (max-width: $md4) {
+      transform: translate(-85%, -40%) scale(0.8);
+    }
   }
 }
 
 .Steps {
-  margin-top: 80px;
+  margin: 80px auto 0;
+  max-width: 1920px;
   display: flex;
   width: 100%;
   flex-wrap: nowrap;
-  padding: 0 50px;
+  padding: 0 50px 0 110px;
   gap: 1rem;
 
   .Step {
@@ -40,8 +45,8 @@
 
     small {
       position: absolute;
-      top: 68px;
-      left: 0;
+      top: 72px;
+      left: 8px;
     }
 
     .Icon {
@@ -87,7 +92,9 @@
   }
 
   .Title {
-    font-weight: 700;
+    @include fluid-type(320px, 1600px, 18px, 32px);
+
+    font-weight: 900;
   }
 
   @media (max-width: $md2) {
@@ -102,6 +109,7 @@
 
       small {
         top: 36px;
+        left: 1px;
         font-size: 10px;
       }
 

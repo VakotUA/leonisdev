@@ -1,5 +1,9 @@
 @import '../../styles/variables.scss';
 
+.Media {
+  box-shadow: inset 0px 100px 100px 25px black;
+}
+
 .Content {
   display: flex;
   align-items: center;

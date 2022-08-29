@@ -11,8 +11,9 @@ import { TextAnimations } from '../../assets/animations/text'
 const Stepper: React.FC = () => {
   return (
     <motion.section id="stepper" className={style.Stepper}>
-      <img src={Circle} alt="circle" className={style.Circle1} />
-      <img src={Circle} alt="circle" className={style.Circle2} />
+      <img src={Circle} alt="circle" className={style.Circle} />
+      {/* <img src={Circle} alt="circle" className={style.Circle1} /> */}
+      {/* <img src={Circle} alt="circle" className={style.Circle2} /> */}
 
       <Container>
         <Text.H3
@@ -25,13 +26,13 @@ const Stepper: React.FC = () => {
         </Text.H3>
       </Container>
 
-      <motion.div
-        className={style.Steps}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ amount: 0.1, once: true }}
-      >
-        <motion.div className={style.Step}>
+      <div className={style.Steps}>
+        <motion.div
+          className={style.Step}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ amount: 0.2, once: true }}
+        >
           <motion.div custom={1} variants={TextAnimations.leftToRight}>
             <small>01</small>
             <Cross.Filled className={style.Icon} />
@@ -46,7 +47,7 @@ const Stepper: React.FC = () => {
           </Text.P>
           <Text.Small custom={3} variants={TextAnimations.topToBottom}>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse ab
-            debitis accusantium libero laboriosam, voluptas fugit id commodi
+            debitis accusantium libero laboriosam, vol uptas fugit id commodi
             quasi accusamus nesciunt alias, explicabo quisquam ratione dolorem
             perspiciatis facilis provident, praesentium asperiores error.
             Quisquam culpa officiis alias molestias sunt quo et est possimus, ad
@@ -54,7 +55,12 @@ const Stepper: React.FC = () => {
           </Text.Small>
         </motion.div>
 
-        <motion.div className={style.Step}>
+        <motion.div
+          className={style.Step}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ amount: 0.2, once: true }}
+        >
           <motion.div custom={2} variants={TextAnimations.leftToRight}>
             <small>02</small>
             <Cross.Filled className={style.Icon} />
@@ -65,7 +71,7 @@ const Stepper: React.FC = () => {
             variants={TextAnimations.topToBottom}
             className={style.Title}
           >
-            PREPARATION
+            DESIGN
           </Text.P>
           <Text.Small custom={4} variants={TextAnimations.topToBottom}>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse ab
@@ -77,7 +83,12 @@ const Stepper: React.FC = () => {
           </Text.Small>
         </motion.div>
 
-        <motion.div className={style.Step}>
+        <motion.div
+          className={style.Step}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ amount: 0.2, once: true }}
+        >
           <motion.div custom={3} variants={TextAnimations.topToBottom}>
             <small>03</small>
             <Cross.Filled className={style.Icon} />
@@ -88,7 +99,7 @@ const Stepper: React.FC = () => {
             variants={TextAnimations.topToBottom}
             className={style.Title}
           >
-            PREPARATION
+            DEVELOPMENT
           </Text.P>
           <Text.Small custom={5} variants={TextAnimations.topToBottom}>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse ab
@@ -96,11 +107,18 @@ const Stepper: React.FC = () => {
             quasi accusamus nesciunt alias, explicabo quisquam ratione dolorem
             perspiciatis facilis provident, praesentium asperiores error.
             Quisquam culpa officiis alias molestias sunt quo et est possimus, ad
-            vel nam voluptas, facere ea odit esse?
+            vel nam voluptas, facere ea odit esse? Quisquam culpa officiis alias
+            molestias sunt quo et est possimus, ad vel nam voluptas, facere ea
+            odit esse?
           </Text.Small>
         </motion.div>
 
-        <motion.div className={style.Step}>
+        <motion.div
+          className={style.Step}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ amount: 0.2, once: true }}
+        >
           <motion.div custom={4} variants={TextAnimations.topToBottom}>
             <small>04</small>
             <Cross.Filled className={style.Icon} />
@@ -111,19 +129,22 @@ const Stepper: React.FC = () => {
             variants={TextAnimations.topToBottom}
             className={style.Title}
           >
-            PREPARATION
+            VALIDATION
           </Text.P>
           <Text.Small custom={6} variants={TextAnimations.topToBottom}>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse ab
             debitis accusantium libero laboriosam, voluptas fugit id commodi
             quasi accusamus nesciunt alias, explicabo quisquam ratione dolorem
             perspiciatis facilis provident, praesentium asperiores error.
-            Quisquam culpa officiis alias molestias sunt quo et est possimus, ad
-            vel nam voluptas, facere ea odit esse?
           </Text.Small>
         </motion.div>
 
-        <motion.div className={style.Step}>
+        <motion.div
+          className={style.Step}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ amount: 0.2, once: true }}
+        >
           <motion.div custom={5} variants={TextAnimations.topToBottom}>
             <small>05</small>
             <Cross.Filled className={style.Icon} />
@@ -133,18 +154,13 @@ const Stepper: React.FC = () => {
             variants={TextAnimations.topToBottom}
             className={style.Title}
           >
-            PREPARATION
+            SUPPORT
           </Text.P>
           <Text.Small custom={7} variants={TextAnimations.topToBottom}>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse ab
-            debitis accusantium libero laboriosam, voluptas fugit id commodi
-            quasi accusamus nesciunt alias, explicabo quisquam ratione dolorem
-            perspiciatis facilis provident, praesentium asperiores error.
-            Quisquam culpa officiis alias molestias sunt quo et est possimus, ad
-            vel nam voluptas, facere ea odit esse?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
           </Text.Small>
         </motion.div>
-      </motion.div>
+      </div>
     </motion.section>
   )
 }

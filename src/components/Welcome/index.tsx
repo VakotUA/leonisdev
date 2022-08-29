@@ -21,6 +21,7 @@ const Welcome: React.FC = () => {
     >
       <Container className={style.Content}>
         <div className={style.Greetings}>
+          <div />
           <div>
             <Text.H5
               custom={1}
