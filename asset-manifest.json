@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/leonisdev/static/css/main.1e8cf7fa.css",
-    "main.js": "/leonisdev/static/js/main.859d9ed5.js",
+    "main.css": "/leonisdev/static/css/main.92fccaff.css",
+    "main.js": "/leonisdev/static/js/main.dc0a0de5.js",
+    "static/media/lion_3.png": "/leonisdev/static/media/lion_3.e76b090a3d5714cc75d3.png",
     "static/media/lion_1.png": "/leonisdev/static/media/lion_1.b3e3ade27be3bc9c7092.png",
     "static/media/lion_main.png": "/leonisdev/static/media/lion_main.d0dcca6258d765033a1b.png",
     "static/media/lion_portfolio.png": "/leonisdev/static/media/lion_portfolio.a81bb08690e38e78a404.png",
+    "static/media/lion_2(bgfree).png": "/leonisdev/static/media/lion_2(bgfree).62856667ad83b5e607ac.png",
     "static/media/ellipse.png": "/leonisdev/static/media/ellipse.0ae28ea5a1d1769cac27.png",
     "static/media/lion_eyes.jpg": "/leonisdev/static/media/lion_eyes.308fa322cf8aa2e46664.jpg",
     "static/media/lion_contacts.png": "/leonisdev/static/media/lion_contacts.440eed30189736bfe8c5.png",
@@ -71,15 +73,16 @@
     "static/media/Gilroy-ExtraBold.woff": "/leonisdev/static/media/Gilroy-ExtraBold.cb761043a2e505ff53c1.woff",
     "static/media/Gilroy-Regular.woff": "/leonisdev/static/media/Gilroy-Regular.31d54a4b841c0e438f13.woff",
     "static/media/lion_logo_text_white.svg": "/leonisdev/static/media/lion_logo_text_white.7d434a69cf9dd5361fdc61aef9260148.svg",
+    "static/media/jq_ui.png": "/leonisdev/static/media/jq_ui.128b8e757ae3df735654.png",
     "index.html": "/leonisdev/index.html",
     "static/media/filled.svg": "/leonisdev/static/media/filled.aec8c9e28f5f1e1b8151d378ca0f54d8.svg",
     "static/media/outlined.svg": "/leonisdev/static/media/outlined.6a7162aad03906369fd9067735e90365.svg",
     "static/media/arrow.svg": "/leonisdev/static/media/arrow.9677d8ab170baa53abb403d94b386ebd.svg",
-    "main.1e8cf7fa.css.map": "/leonisdev/static/css/main.1e8cf7fa.css.map",
-    "main.859d9ed5.js.map": "/leonisdev/static/js/main.859d9ed5.js.map"
+    "main.92fccaff.css.map": "/leonisdev/static/css/main.92fccaff.css.map",
+    "main.dc0a0de5.js.map": "/leonisdev/static/js/main.dc0a0de5.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e8cf7fa.css",
-    "static/js/main.859d9ed5.js"
+    "static/css/main.92fccaff.css",
+    "static/js/main.dc0a0de5.js"
   ]
 }
