@@ -3,12 +3,10 @@
 
 .Technologies {
   position: relative;
-
   box-shadow: inset 0px 0px 100px 50px black;
 
   .Title {
     display: flex;
-    // background-color: red;
 
     > div {
       &:last-child {
@@ -35,9 +33,7 @@
 
   .List {
     margin-top: 90px;
-    margin-right: 15%;
-
-    // z-index: 10;
+    margin-right: 20%;
 
     @media (max-width: $md4) {
       margin-top: 25px;

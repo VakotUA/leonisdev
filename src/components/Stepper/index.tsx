@@ -13,12 +13,13 @@ const Stepper: React.FC = () => {
     <motion.section id="stepper" className={style.Stepper}>
       <img src={Circle} alt="circle" className={style.Circle} />
 
-      <Container>
+      <Container className={style.Content}>
         <Text.H3
           initial="hidden"
           whileInView="visible"
           viewport={{ amount: 0.75, once: true }}
           variants={TextAnimations.bottomToTop}
+          className={style.Title}
         >
           HOW DOES THE MAGIC HAPPEN?
         </Text.H3>
@@ -134,7 +135,7 @@ const Stepper: React.FC = () => {
             then by the head of the team. And when finally all is passed and
             validated, it’s your time to get enjoyment of discovering updates.
             There is a multi-level protection applied to your happiness and
-            time, so your clients can feel the same from your side.{' '}
+            time, so your clients can feel the same from your side.
           </Text.Small>
         </motion.div>
 

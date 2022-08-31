@@ -39,6 +39,8 @@
 
     margin-right: 20px;
   }
+
+  margin-left: calc(12px + (32 - 12) * ((100vw - 320px) / (1600 - 320)));
 }
 
 .Links {
