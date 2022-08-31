@@ -6,22 +6,28 @@
 }
 
 .Content {
-  .Tabs {
-    margin-top: 24px;
+  > div {
+    padding-left: calc(0px + (4 - 0) * ((100vw - 320px) / (1600 - 320)));
 
-    ul {
-      display: inline-flex;
-      gap: 2rem;
+    .Tabs {
+      padding-left: calc(2px + (6 - 2) * ((100vw - 320px) / (1600 - 320)));
+      margin-top: 24px;
 
-      @media (max-width: $md3) {
-        gap: 1rem;
-      }
+      ul {
+        display: inline-flex;
+        gap: 2rem;
+        padding-left: 2px;
 
-      li {
-        p {
-          @include fluid-type(320px, 1600px, 12px, 18px);
-          @include hover_effect_underline;
-          font-weight: 500;
+        @media (max-width: $md3) {
+          gap: 1rem;
+        }
+
+        li {
+          p {
+            @include fluid-type(320px, 1600px, 12px, 18px);
+            @include hover_effect_underline;
+            font-weight: 500;
+          }
         }
       }
     }

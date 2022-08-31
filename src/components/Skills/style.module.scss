@@ -105,7 +105,7 @@
   display: flex;
   gap: 0 8.5rem;
 
-  padding-left: calc(4px + (10 - 4) * ((100vw - 320px) / (1600 - 320)));
+  padding-left: calc(4px + (12 - 4) * ((100vw - 320px) / (1600 - 320)));
   p {
     margin-left: 30px;
     position: relative;
@@ -132,6 +132,8 @@
 
 .Button {
   padding: 0 50px;
+  margin-left: calc(2px + (12 - 2) * ((100vw - 320px) / (1600 - 320)));
+
   max-width: 700px;
 }
 
