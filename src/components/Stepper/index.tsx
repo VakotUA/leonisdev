@@ -12,8 +12,6 @@ const Stepper: React.FC = () => {
   return (
     <motion.section id="stepper" className={style.Stepper}>
       <img src={Circle} alt="circle" className={style.Circle} />
-      {/* <img src={Circle} alt="circle" className={style.Circle1} /> */}
-      {/* <img src={Circle} alt="circle" className={style.Circle2} /> */}
 
       <Container>
         <Text.H3
@@ -46,12 +44,13 @@ const Stepper: React.FC = () => {
             PREPARATION
           </Text.P>
           <Text.Small custom={3} variants={TextAnimations.topToBottom}>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse ab
-            debitis accusantium libero laboriosam, vol uptas fugit id commodi
-            quasi accusamus nesciunt alias, explicabo quisquam ratione dolorem
-            perspiciatis facilis provident, praesentium asperiores error.
-            Quisquam culpa officiis alias molestias sunt quo et est possimus, ad
-            vel nam voluptas, facere ea odit esse?
+            This is the very start. We are getting known of each other, setup
+            communication, discuss general goals and requirements of the
+            project. The key point is to mark down the value that the project is
+            expected to bring you and plot user scenarios along with designer
+            and quality engineer. It’s important as these are two persons who
+            create and validate the look-and-feel of the creation. Also schedule
+            and terms are set here.
           </Text.Small>
         </motion.div>
 
@@ -74,12 +73,12 @@ const Stepper: React.FC = () => {
             DESIGN
           </Text.P>
           <Text.Small custom={4} variants={TextAnimations.topToBottom}>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse ab
-            debitis accusantium libero laboriosam, voluptas fugit id commodi
-            quasi accusamus nesciunt alias, explicabo quisquam ratione dolorem
-            perspiciatis facilis provident, praesentium asperiores error.
-            Quisquam culpa officiis alias molestias sunt quo et est possimus, ad
-            vel nam voluptas, facere ea odit esse?
+            Beauty is being born here. We believe that tools are used by people,
+            that is why we create user experience driven designs, that touches
+            target audience exactly. We also believe your project should make
+            difference. That is why we make designs unique, bringing a special
+            imprint of main idea to the visual look. Quality control also starts
+            here.
           </Text.Small>
         </motion.div>
 
@@ -102,14 +101,12 @@ const Stepper: React.FC = () => {
             DEVELOPMENT
           </Text.P>
           <Text.Small custom={5} variants={TextAnimations.topToBottom}>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse ab
-            debitis accusantium libero laboriosam, voluptas fugit id commodi
-            quasi accusamus nesciunt alias, explicabo quisquam ratione dolorem
-            perspiciatis facilis provident, praesentium asperiores error.
-            Quisquam culpa officiis alias molestias sunt quo et est possimus, ad
-            vel nam voluptas, facere ea odit esse? Quisquam culpa officiis alias
-            molestias sunt quo et est possimus, ad vel nam voluptas, facere ea
-            odit esse?
+            Meat of functionality is being grown on the basis of written
+            scenarios and design. Functionality is usually separated into parts
+            to allow partial releases and earlier possibility of going live with
+            minimum viable product. And to also provide updates on a regular
+            basis. Time is the factor here. Also quality is. So it’s being
+            controlled here too.
           </Text.Small>
         </motion.div>
 
@@ -132,10 +129,12 @@ const Stepper: React.FC = () => {
             VALIDATION
           </Text.P>
           <Text.Small custom={6} variants={TextAnimations.topToBottom}>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse ab
-            debitis accusantium libero laboriosam, voluptas fugit id commodi
-            quasi accusamus nesciunt alias, explicabo quisquam ratione dolorem
-            perspiciatis facilis provident, praesentium asperiores error.
+            Here is the fun part. User scenarios are being applied to the
+            release candidate in many different ways. First by our engineers,
+            then by the head of the team. And when finally all is passed and
+            validated, it’s your time to get enjoyment of discovering updates.
+            There is a multi-level protection applied to your happiness and
+            time, so your clients can feel the same from your side.{' '}
           </Text.Small>
         </motion.div>
 
@@ -157,7 +156,12 @@ const Stepper: React.FC = () => {
             SUPPORT
           </Text.P>
           <Text.Small custom={7} variants={TextAnimations.topToBottom}>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Time is never still. People are never the same. World spins and
+            things happen. We are here to keep our creations running in tact
+            with what’s surrounding them. And it’s not only about keeping them
+            working. Here is where we can continuously improve the value brought
+            by the project. As nothing gives a better view of the idea than time
+            of the idea being alive!
           </Text.Small>
         </motion.div>
       </div>
