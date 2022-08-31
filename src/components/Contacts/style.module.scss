@@ -24,6 +24,8 @@
     align-items: center;
   }
 
+  padding-left: calc(0px + (50 - 0) * ((100vw - 320px) / (1600 - 320)));
+
   h3,
   h5 {
     margin: 0 36px;

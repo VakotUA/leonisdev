@@ -22,19 +22,21 @@ const Contacts: React.FC = () => {
       whileInView="visible"
       viewport={{ amount: 0.2, once: true }}
     >
-      <motion.div
-        className={style.Content}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ amount: 0.2, once: true }}
-      >
-        <Text.H3 custom={1} variants={TextAnimations.leftToRight}>
-          GET IN TOUCH
-        </Text.H3>
-        <Text.H5 custom={2} variants={TextAnimations.leftToRight}>
-          LET'S MAKE GREAT THINGS HAPPEN
-        </Text.H5>
-      </motion.div>
+      <Container>
+        <motion.div
+          className={style.Content}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ amount: 0.2, once: true }}
+        >
+          <Text.H3 custom={1} variants={TextAnimations.leftToRight}>
+            GET IN TOUCH
+          </Text.H3>
+          <Text.H5 custom={2} variants={TextAnimations.leftToRight}>
+            LET'S MAKE GREAT THINGS HAPPEN
+          </Text.H5>
+        </motion.div>
+      </Container>
 
       <div className={style.Collumns}>
         <motion.div
