@@ -8,6 +8,14 @@ import Circle from '../../assets/images/ellipse.png'
 
 import LionImage from '../../assets/images/lion_main.png'
 
+import LionImage1 from '../../assets/images/frames/1.png'
+import LionImage2 from '../../assets/images/frames/2.png'
+import LionImage3 from '../../assets/images/frames/3.png'
+import LionImage4 from '../../assets/images/frames/4.png'
+import LionImage5 from '../../assets/images/frames/5.png'
+import LionImage6 from '../../assets/images/frames/6.png'
+import LionImage7 from '../../assets/images/frames/7.png'
+
 import { motion, AnimatePresence } from 'framer-motion'
 import { TextAnimations } from '../../assets/animations/text'
 
@@ -88,7 +96,100 @@ const Welcome: React.FC = () => {
             </MotionButton>
           </div>
 
-          <img className={style.Image} src={LionImage} alt="lion" />
+          <div className={style.ImageBlock}>
+            <motion.img
+              animate={{ y: ['20px', '-10px', '30px', '-20px', '20px'] }}
+              transition={{
+                repeat: Infinity,
+                duration: 15,
+                type: 'spring',
+                damping: 25,
+                stiffness: 500,
+              }}
+              src={LionImage1}
+              alt="lion"
+            />
+            <motion.img
+              animate={{ y: ['20px', '-10px', '30px', '-20px', '20px'] }}
+              transition={{
+                repeat: Infinity,
+                duration: 15,
+                type: 'spring',
+                damping: 25,
+                stiffness: 500,
+                delay: 0.2,
+              }}
+              src={LionImage2}
+              alt="lion"
+            />
+            <motion.img
+              animate={{ y: ['20px', '-10px', '30px', '-20px', '20px'] }}
+              transition={{
+                repeat: Infinity,
+                duration: 15,
+                type: 'spring',
+                damping: 25,
+                stiffness: 500,
+                delay: 0.4,
+              }}
+              src={LionImage3}
+              alt="lion"
+            />
+            <motion.img
+              animate={{ y: ['20px', '-10px', '30px', '-20px', '20px'] }}
+              transition={{
+                repeat: Infinity,
+                duration: 15,
+                type: 'spring',
+                damping: 25,
+                stiffness: 500,
+                delay: 1.2,
+              }}
+              src={LionImage4}
+              alt="lion"
+            />
+            <motion.img
+              animate={{ y: ['20px', '-10px', '30px', '-20px', '20px'] }}
+              transition={{
+                repeat: Infinity,
+                duration: 15,
+                type: 'spring',
+                damping: 25,
+                stiffness: 500,
+                delay: 0.6,
+              }}
+              src={LionImage5}
+              alt="lion"
+            />
+            <motion.img
+              animate={{ y: ['20px', '-10px', '30px', '-20px', '20px'] }}
+              transition={{
+                repeat: Infinity,
+                duration: 15,
+                type: 'spring',
+                damping: 25,
+                stiffness: 500,
+                delay: 0.8,
+              }}
+              src={LionImage6}
+              alt="lion"
+            />
+            <motion.img
+              animate={{ y: ['20px', '-10px', '30px', '-20px', '20px'] }}
+              transition={{
+                repeat: Infinity,
+                duration: 15,
+                type: 'spring',
+                damping: 25,
+                stiffness: 500,
+                delay: 1,
+              }}
+              src={LionImage7}
+              alt="lion"
+            />
+          </div>
+
+          {/* <img className={style.Image} src={LionImage} alt="lion" /> */}
         </Container>
 
         <Cross.Filled size="80px" className={style.Particles1} />
