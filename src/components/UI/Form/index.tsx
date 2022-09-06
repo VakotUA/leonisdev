@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import style from './style.module.scss'
 import { Button } from '../Button'
 import { Text } from '../Text'
-import { Cross } from '../Particles'
 import { ReactComponent as Arrow } from '../../../assets/svgs/arrow.svg'
 
 interface IForm {
@@ -22,12 +21,13 @@ export const ContactForm: React.FC = () => {
 
   const handleSubmit = (e: any) => {
     e.preventDefault()
+
+    console.log(details)
   }
 
   return (
     <form className={style.Form} onSubmit={handleSubmit}>
       <div>
-        <Cross.Filled size="64px" className={style.Particles} />
         <Text.H3 className={style.Title}>WRITE A MESSAGE</Text.H3>
 
         <div className={style.formGroup}>

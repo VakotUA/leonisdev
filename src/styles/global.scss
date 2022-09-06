@@ -10,24 +10,26 @@ body {
 
   background-color: black;
 
+  scroll-behavior: smooth;
+
   min-height: 100vh;
-  position: relative;
 
   max-width: 100vw;
-  overflow: hidden;
+
+  background-color: black;
 
   background: url('./../assets/images/sparks_bg.jpg');
   background-size: contain;
   background-repeat: repeat-y;
   background-position: 0 0;
 
-  scroll-behavior: smooth;
-}
+  position: relative;
 
-body {
+  overflow-x: hidden;
   overflow-y: auto;
 }
 
+html:has(> body.scroll-lock),
 body.scroll-lock {
   overflow-y: hidden;
 }

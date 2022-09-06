@@ -12,6 +12,7 @@ import { ContactForm as Form } from '../UI/Form'
 
 import { motion } from 'framer-motion'
 import { TextAnimations } from '../../assets/animations/text'
+import { Cross } from '../UI/Particles'
 
 const Contacts: React.FC = () => {
   return (
@@ -90,6 +91,7 @@ const Contacts: React.FC = () => {
           variants={TextAnimations.rightToLeft}
         >
           <img className={style.Image} src={FormLion} alt="" />
+          <Cross.Filled size="64px" className={style.Particles} />
           <Form />
         </motion.div>
       </div>

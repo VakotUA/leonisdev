@@ -140,3 +140,13 @@
     }
   }
 }
+
+.Particles {
+  position: absolute;
+  left: -32px;
+  top: 50px;
+
+  @media (max-width: $md3) {
+    display: none;
+  }
+}

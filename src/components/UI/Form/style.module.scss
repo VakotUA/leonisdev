@@ -1,20 +1,13 @@
 @import '../../../styles/variables.scss';
 
 .Form {
+  width: 100%;
+  height: fit-content;
+
   > div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-}
-
-.Particles {
-  position: absolute;
-  left: -32px;
-  top: 50px;
-
-  @media (max-width: $md3) {
-    display: none;
   }
 }
 
