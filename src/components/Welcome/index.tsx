@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import style from './style.module.scss'
 import Container from '../Layout/Container'
 import { MotionButton } from '../UI/Button'
@@ -15,6 +15,12 @@ import DiscussModal from '../DiscussForm'
 
 const Welcome: React.FC = () => {
   const [isModalVisible, setIsModalVisible] = useState<boolean>(false)
+
+  useEffect(() => {
+    isModalVisible
+      ? document.body.classList.add('scroll-lock')
+      : document.body.classList.remove('scroll-lock')
+  }, [isModalVisible])
 
   return (
     <>

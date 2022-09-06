@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import style from './style.module.scss'
 
 import { Cross } from '../UI/Particles'
@@ -38,12 +38,6 @@ const DiscussModal: React.FC<Props> = ({
   isModalVisible,
   setIsModalVisible,
 }) => {
-  useEffect(() => {
-    isModalVisible
-      ? document.body.classList.add('scroll-lock')
-      : document.body.classList.remove('scroll-lock')
-  }, [isModalVisible])
-
   return (
     <div className={style.Form}>
       <motion.img
