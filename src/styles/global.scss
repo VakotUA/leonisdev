@@ -12,19 +12,20 @@ body {
 
   scroll-behavior: smooth;
 
-  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
 
-  max-width: 100vw;
-
-  background: url('./../assets/images/sparks_bg.jpg');
+body {
+  background-image: url('./../assets/images/sparks_bg.jpg');
   background-size: contain;
   background-repeat: repeat-y;
   background-position: 0 0;
 
-  position: relative;
+  min-height: 100vh;
+  max-width: 100vw;
 
-  overflow-x: hidden;
-  overflow-y: auto;
+  position: relative;
 }
 
 html:has(> body.scroll-lock),
