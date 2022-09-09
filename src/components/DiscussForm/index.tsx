@@ -30,7 +30,7 @@ const modalAnimation = {
 }
 
 interface Props {
-  isModalVisible: boolean
+  isModalVisible?: boolean
   setIsModalVisible: (state: boolean) => void
 }
 

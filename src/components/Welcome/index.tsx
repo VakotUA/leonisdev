@@ -6,8 +6,6 @@ import { Text } from '../UI/Text'
 import { Cross } from '../UI/Particles'
 import Circle from '../../assets/images/ellipse.png'
 
-import LionImage from '../../assets/images/lion_main.png'
-
 import LionImage1 from '../../assets/images/frames/1.png'
 import LionImage2 from '../../assets/images/frames/2.png'
 import LionImage3 from '../../assets/images/frames/3.png'
@@ -20,14 +18,14 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { TextAnimations } from '../../assets/animations/text'
 
 import DiscussModal from '../DiscussForm'
+import { useLockedBody } from '../../hooks/useLockedBody'
 
 const Welcome: React.FC = () => {
   const [isModalVisible, setIsModalVisible] = useState<boolean>(false)
 
+  const [locked, setLocked] = useLockedBody()
   useEffect(() => {
-    isModalVisible
-      ? document.body.classList.add('scroll-lock')
-      : document.body.classList.remove('scroll-lock')
+    setLocked(isModalVisible)
   }, [isModalVisible])
 
   return (
@@ -98,32 +96,33 @@ const Welcome: React.FC = () => {
 
           <div className={style.ImageBlock}>
             <motion.img
-              animate={{ y: ['20px', '-10px', '30px', '-20px', '20px'] }}
+              animate={{ y: ['50px', '-10px', '30px', '-20px', '50px'] }}
               transition={{
                 repeat: Infinity,
                 duration: 15,
                 type: 'spring',
                 damping: 25,
                 stiffness: 500,
+                delay: 1.2,
               }}
               src={LionImage1}
               alt="lion"
             />
             <motion.img
-              animate={{ y: ['20px', '-10px', '30px', '-20px', '20px'] }}
+              animate={{ y: ['40px', '-10px', '30px', '-20px', '40px'] }}
               transition={{
                 repeat: Infinity,
                 duration: 15,
                 type: 'spring',
                 damping: 25,
                 stiffness: 500,
-                delay: 0.2,
+                delay: 0.8,
               }}
               src={LionImage2}
               alt="lion"
             />
             <motion.img
-              animate={{ y: ['20px', '-10px', '30px', '-20px', '20px'] }}
+              animate={{ y: ['30px', '-10px', '30px', '-20px', '30px'] }}
               transition={{
                 repeat: Infinity,
                 duration: 15,
@@ -143,26 +142,26 @@ const Welcome: React.FC = () => {
                 type: 'spring',
                 damping: 25,
                 stiffness: 500,
-                delay: 1.2,
+                delay: 0,
               }}
               src={LionImage4}
               alt="lion"
             />
             <motion.img
-              animate={{ y: ['20px', '-10px', '30px', '-20px', '20px'] }}
+              animate={{ y: ['30px', '-10px', '30px', '-20px', '30px'] }}
               transition={{
                 repeat: Infinity,
                 duration: 15,
                 type: 'spring',
                 damping: 25,
                 stiffness: 500,
-                delay: 0.6,
+                delay: 0.4,
               }}
               src={LionImage5}
               alt="lion"
             />
             <motion.img
-              animate={{ y: ['20px', '-10px', '30px', '-20px', '20px'] }}
+              animate={{ y: ['40px', '-10px', '30px', '-20px', '40px'] }}
               transition={{
                 repeat: Infinity,
                 duration: 15,
@@ -175,21 +174,19 @@ const Welcome: React.FC = () => {
               alt="lion"
             />
             <motion.img
-              animate={{ y: ['20px', '-10px', '30px', '-20px', '20px'] }}
+              animate={{ y: ['50px', '-10px', '30px', '-20px', '50px'] }}
               transition={{
                 repeat: Infinity,
                 duration: 15,
                 type: 'spring',
                 damping: 25,
                 stiffness: 500,
-                delay: 1,
+                delay: 1.2,
               }}
               src={LionImage7}
               alt="lion"
             />
           </div>
-
-          {/* <img className={style.Image} src={LionImage} alt="lion" /> */}
         </Container>
 
         <Cross.Filled size="80px" className={style.Particles1} />

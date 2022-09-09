@@ -4,19 +4,17 @@
 html,
 body {
   color: rgb(255, 255, 255);
+  background-color: black;
+
   font-family: 'Gilroy';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  background-color: black;
 
   scroll-behavior: smooth;
 
   min-height: 100vh;
 
   max-width: 100vw;
-
-  background-color: black;
 
   background: url('./../assets/images/sparks_bg.jpg');
   background-size: contain;

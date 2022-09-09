@@ -82,30 +82,6 @@
   }
 }
 
-.Image {
-  overflow: hidden;
-  height: 130%;
-  z-index: 0;
-
-  position: absolute;
-  left: 55%;
-  top: 60%;
-  transform: translateY(-50%);
-
-  @media (max-width: $md3) {
-    top: 50%;
-    height: 120%;
-  }
-  @media (max-width: $md4) {
-    top: 40%;
-    left: 60%;
-    height: 500px;
-  }
-  @media (max-width: $md5) {
-    left: 30%;
-  }
-}
-
 .ImageBlock {
   display: flex;
   overflow: hidden;

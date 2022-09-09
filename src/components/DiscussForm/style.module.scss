@@ -37,6 +37,9 @@
   height: 100vh;
   max-height: 800px;
   overflow-y: auto;
+
+  // Background circle replace
+  // box-shadow: 0 0 100px 10px #ff5100;
 }
 
 .Button {
@@ -63,17 +66,17 @@
 
   background-color: rgba(0, 0, 0, 0.9);
 
-  z-index: -1;
+  z-index: -2;
 }
 
 .Circle {
   position: fixed;
   left: 48%;
-  top: 50%;
+  top: 52%;
   transform: translate(-50%, -50%);
 
   width: 1200px;
   z-index: -1;
 
-  display: none;
+  pointer-events: none;
 }
